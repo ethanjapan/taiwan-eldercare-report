@@ -298,6 +298,19 @@ section.ch:first-of-type{border-top:none;}
 .ch-kpi .kn{font-family:var(--serif); font-size:26px; font-weight:700; color:var(--jade-d); line-height:1; letter-spacing:-.01em; font-feature-settings:"tnum";}
 .ch-kpi .kn s{font-size:.5em; text-decoration:none; margin-left:3px; font-weight:600;}
 .ch-kpi .kl{font-size:11.5px; color:var(--txt2); margin-top:7px; line-height:1.45;}
+/* FAQ accordion */
+.faq{margin-top:6px;}
+.faq details{border:1px solid var(--line); border-radius:14px; margin-bottom:13px; background:var(--card); overflow:hidden; transition:box-shadow .25s, border-color .25s;}
+.faq details[open]{box-shadow:var(--shadow-sm); border-color:var(--jade-line);}
+.faq summary{cursor:pointer; padding:20px 24px; font-family:var(--serif); font-size:16.5px; font-weight:600; color:var(--ink); list-style:none; display:flex; align-items:flex-start; gap:14px;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary .qmark{flex-shrink:0; width:28px; height:28px; border-radius:8px; background:var(--jade-soft); color:var(--jade-d); font-family:var(--mono); font-weight:700; font-size:13px; display:flex; align-items:center; justify-content:center; margin-top:1px;}
+.faq summary .qtext{flex:1;}
+.faq summary .qtoggle{margin-left:auto; font-size:24px; line-height:1; color:var(--mut); font-weight:300; transition:transform .25s, color .25s; flex-shrink:0;}
+.faq details[open] summary .qtoggle{transform:rotate(45deg); color:var(--jade);}
+.faq-a{padding:2px 26px 24px 66px; font-size:14px; line-height:1.82; color:var(--txt2);}
+.faq-a strong{color:var(--ink); font-weight:600;}
+@media(max-width:560px){.faq-a{padding-left:24px;} .faq summary{font-size:15px; padding:18px 18px;}}
 .ch-num{
   font-family:var(--mono); font-size:12px; font-weight:600;
   letter-spacing:.3em; color:var(--brass); text-transform:uppercase;
@@ -667,6 +680,7 @@ html.js .reveal.in{opacity:1; transform:none;}
       <li><a href="#c8">市場進入策略</a></li>
       <li><a href="#c9">風險評估</a></li>
       <li><a href="#c10">結論與建議</a></li>
+      <li><a href="#faq">常見問題</a></li>
     </ol>
   </div>
 </div>
@@ -688,6 +702,7 @@ html.js .reveal.in{opacity:1; transform:none;}
     <li><a href="#c8">市場進入策略</a></li>
     <li><a href="#c9">風險評估</a></li>
     <li><a href="#c10">結論與建議</a></li>
+    <li><a href="#faq">常見問題</a></li>
   </ol>
   <div class="toc-foot">市場研究報告 · 2026</div>
 </nav>
@@ -1653,6 +1668,50 @@ html.js .reveal.in{opacity:1; transform:none;}
   <div class="note brass">
     <span class="tag">總結建議 · One-Liner</span>
     <strong>「以中端切入、用日本的服務、走台灣的制度、靠連續照護與醫養結合建立護城河，並把人力工程當成第一天的核心戰略。」</strong>台灣養老產業的需求紅利窗口已經打開，未來十年是進場的最佳時機。真正的勝負手，不在需求，而在<strong>選址、人力與差異化</strong>三件事上的執行力。
+  </div>
+</section>
+
+<!-- ===================== 附錄 · Q&A ===================== -->
+<section class="ch" id="faq">
+  <div class="ch-head">
+    <div class="ch-icon"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 00-8 13.2L3 21l4.8-1a9 9 0 104.2-17Z"/><path d="M9.3 9.3a2.7 2.7 0 015.3 1c0 1.8-2.6 2.3-2.6 4"/><path d="M12 17.4h.01"/></svg></div>
+    <div class="ch-num">APPENDIX · Q&amp;A</div>
+    <h2>讀者常見問題</h2>
+    <div class="sub">投資人與經營者最關心的八個提問</div>
+  </div>
+  <div class="faq">
+    <details open>
+      <summary><span class="qmark">Q1</span><span class="qtext">為什麼是「現在」進場？再等三五年不行嗎？</span><span class="qtoggle">＋</span></summary>
+      <div class="faq-a">需求高峰落在 <strong>2030–2045 年</strong>（嬰兒潮世代進入 80–85 歲、失能放量）。養老機構從動工到入住穩定約需 3–5 年，現在（2026–2028 動工）進場，恰好趕上需求海嘯的主升段。若等需求完全顯化才動，將錯失卡位優質地段與建立品牌的時間窗口。</div>
+    </details>
+    <details>
+      <summary><span class="qmark">Q2</span><span class="qtext">台灣真的會複製日本嗎？制度與文化都不同。</span><span class="qtoggle">＋</span></summary>
+      <div class="faq-a">人口結構幾乎複製日本（台灣 2025 ≈ 日本 2005）。但本報告明確主張<strong>「不可照搬」</strong>：日本靠介護保險養活機構，台灣長照以稅收為主、給付較薄，因此台灣必須以<strong>自費市場</strong>為核心。可導入的是日本的「服務設計與營運 know-how」，而非制度本身——差異已在第四章逐項拆解。</div>
+    </details>
+    <details>
+      <summary><span class="qmark">Q3</span><span class="qtext">為什麼主打中端，而不是利潤更高的高端、需求更大的平價？</span><span class="qtoggle">＋</span></summary>
+      <div class="faq-a">高端已被大集團與壽險佔據、平價是中小業者紅海，兩端競爭都已白熱化。中間「<strong>中產負擔得起、品質體面、可連續照護</strong>」的級距存在結構性空白，是最大的價值白地。加上台灣嬰兒潮世代有房、有錢、有意願，自費購買力足以支撐中端定位。</div>
+    </details>
+    <details>
+      <summary><span class="qmark">Q4</span><span class="qtext">初期要投入多少資金？多久回本？最壞情況賠多少？</span><span class="qtoggle">＋</span></summary>
+      <div class="faq-a">以中端 <strong>200 床旗艦據點</strong>，一般情境稅前淨利率約 <strong>12%</strong>、投資回收期約 <strong>9–11 年</strong>（保守／一般／樂觀三情境財務模型見第六章）。主要下行風險來自「入住率不足」與「人力成本超支」，建議備妥涵蓋建置成本＋至少 18 個月營運準備金的資金，以撐過入住爬坡期。</div>
+    </details>
+    <details>
+      <summary><span class="qmark">Q5</span><span class="qtext">人力短缺這麼嚴重，營運真的撐得住嗎？</span><span class="qtoggle">＋</span></summary>
+      <div class="faq-a">這正是日本最慘痛的教訓（2040 年缺口 57–69 萬人）。本報告主張把<strong>「人力工程」當成第一天（Day 1）的核心戰略</strong>：自建訓練學院、預先布建合法外籍人力管道、導入照護科技、以高於同業的待遇與尊重專業的文化留才。台灣現階段人力成本仍低於日本，正是低成本建立這套體系的最佳窗口。</div>
+    </details>
+    <details>
+      <summary><span class="qmark">Q6</span><span class="qtext">法規還在變，會不會做到一半政策就翻盤？</span><span class="qtoggle">＋</span></summary>
+      <div class="faq-a">法規不確定性是六大風險之首，須在 Day 1 處理。因應方式：選擇<strong>法規最明確、風險最低的立案類別</strong>切入、保持與主管機關溝通、商業模式不押注於特定補助、並預留法規調整的彈性設計。報告刻意不把獲利建立在補助上，正是為了降低政策翻盤的衝擊。</div>
+    </details>
+    <details>
+      <summary><span class="qmark">Q7</span><span class="qtext">萬一經營不善，能退場嗎？資產好處分嗎？</span><span class="qtoggle">＋</span></summary>
+      <div class="faq-a">採<strong>「輕資產」策略</strong>（長租或合建，而非自購土地）可大幅降低退場成本。連鎖化後具備 REITs、策略投資人、併購整合等資本化退出機會（見第六章路線圖）。相較重資產自建，輕資產讓「先建置、待需求」與「必要時退場」都更具彈性。</div>
+    </details>
+    <details>
+      <summary><span class="qmark">Q8</span><span class="qtext">這份報告的數字可信嗎？資料來源是什麼？</span><span class="qtoggle">＋</span></summary>
+      <div class="faq-a">本報告秉持<strong>「一手原文優先」</strong>：日本部分回溯厚生勞動省、上市企業財報、不動產開發商官網原文；台灣部分採國發會、衛福部官方統計，輔以工研院、資策會、KPMG 等機構報告。財務數字為基於公開資訊的情境估算（非投資建議），匯率換算基準與完整資料來源均於文末列明。</div>
+    </details>
   </div>
 </section>
   </div><!-- /.wrap -->
