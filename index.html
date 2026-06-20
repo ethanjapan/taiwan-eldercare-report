@@ -29,40 +29,40 @@
    台灣養老照護 市場研究報告 — Light Editorial Redesign v2
    ============================================================ */
 :root{
-  /* surfaces */
-  --paper:#F7F4EE;          /* page background, warm paper */
-  --paper2:#FBF9F4;
+  /* surfaces — Apple white/grey */
+  --paper:#FFFFFF;
+  --paper2:#F5F5F7;
   --card:#FFFFFF;
-  --card2:#FCFAF6;
-  --tint:#F0EDE4;           /* subtle filled blocks */
+  --card2:#F9F9F9;
+  --tint:#F5F5F7;
 
-  /* ink */
-  --ink:#171C19;            /* headings, near-black green */
-  --txt:#33403A;            /* body */
-  --txt2:#5C6B63;           /* secondary */
-  --mut:#8B968D;            /* muted / captions */
+  /* ink — Apple text */
+  --ink:#1D1D1F;
+  --txt:#1D1D1F;
+  --txt2:#6E6E73;
+  --mut:#A1A1A6;
 
-  /* brand */
-  --jade:#1C7A5B;           /* primary */
-  --jade-d:#135C44;
-  --jade-soft:#E4F0EA;
-  --jade-line:#BFE0D2;
-  --brass:#9A7327;          /* gold/brass */
-  --brass-soft:#F4ECDA;
-  --brass-line:#E3D2A8;
-  --clay:#B0533A;           /* warm warning/clay */
-  --clay-soft:#F6E7E1;
-  --clay-line:#EAC8BC;
-  --sky:#2D7E96;
+  /* brand — Apple blue primary */
+  --jade:#0066CC;
+  --jade-d:#004499;
+  --jade-soft:#EBF4FF;
+  --jade-line:#C7E0F4;
+  --brass:#86868B;          /* Apple grey-mid (secondary) */
+  --brass-soft:#F5F5F7;
+  --brass-line:#D2D2D7;
+  --clay:#FF3B30;           /* Apple red */
+  --clay-soft:#FFF2F0;
+  --clay-line:#FFBFBD;
+  --sky:#34AADC;
 
   /* lines */
-  --line:rgba(23,28,25,.12);
-  --line2:rgba(23,28,25,.07);
-  --line3:rgba(23,28,25,.04);
+  --line:rgba(0,0,0,.10);
+  --line2:rgba(0,0,0,.06);
+  --line3:rgba(0,0,0,.03);
 
-  --shadow-sm:0 1px 2px rgba(23,28,25,.04), 0 2px 6px rgba(23,28,25,.05);
-  --shadow-md:0 4px 12px rgba(23,28,25,.06), 0 12px 32px rgba(23,28,25,.07);
-  --shadow-lg:0 8px 24px rgba(23,28,25,.08), 0 28px 64px rgba(23,28,25,.10);
+  --shadow-sm:0 1px 2px rgba(0,0,0,.04), 0 2px 8px rgba(0,0,0,.06);
+  --shadow-md:0 4px 12px rgba(0,0,0,.07), 0 12px 32px rgba(0,0,0,.08);
+  --shadow-lg:0 8px 24px rgba(0,0,0,.09), 0 28px 64px rgba(0,0,0,.12);
 
   --serif:'Noto Serif TC', Georgia, serif;
   --sans:'Inter','Noto Sans TC', system-ui, sans-serif;
@@ -76,10 +76,7 @@
 html{scroll-behavior:smooth; -webkit-text-size-adjust:100%;}
 body{
   margin:0;
-  background:
-    radial-gradient(1200px 700px at 78% -8%, #EDF4F0 0%, rgba(237,244,240,0) 55%),
-    radial-gradient(1000px 620px at -10% 4%, #F6EFE2 0%, rgba(246,239,226,0) 50%),
-    var(--paper);
+  background:var(--paper);
   color:var(--txt);
   font-family:var(--sans);
   font-size:16.5px;
@@ -97,9 +94,9 @@ em{font-style:normal;}
 /* ---------- reading progress ---------- */
 .progress{
   position:fixed; top:0; left:0; height:3px; width:0;
-  background:linear-gradient(90deg, var(--jade), #36b089 60%, var(--brass));
+  background:linear-gradient(90deg, var(--jade), #34AADC 60%, var(--brass));
   z-index:120; transition:width .12s ease-out;
-  box-shadow:0 1px 8px rgba(28,122,91,.35);
+  box-shadow:0 1px 8px rgba(0,102,204,.30);
 }
 
 /* ---------- shell layout ---------- */
@@ -150,7 +147,7 @@ nav.toc a::before{
 nav.toc a:hover{background:var(--jade-soft); color:var(--jade-d); transform:translateX(2px);}
 nav.toc a:hover::before{color:var(--jade);}
 nav.toc a.active{
-  background:linear-gradient(90deg, var(--jade-soft), rgba(228,240,234,0));
+  background:linear-gradient(90deg, var(--jade-soft), rgba(235,244,255,0));
   color:var(--jade-d); font-weight:600;
 }
 nav.toc a.active::before{color:var(--jade);}
@@ -175,9 +172,9 @@ header.hero{
   position:relative; overflow:hidden;
   padding:clamp(70px,11vw,140px) clamp(28px,6vw,96px) clamp(56px,7vw,88px);
   background:
-    radial-gradient(900px 520px at 88% -6%, #DCEFE6 0%, rgba(220,239,230,0) 60%),
-    radial-gradient(760px 480px at 4% 108%, #F3E7CF 0%, rgba(243,231,207,0) 60%),
-    linear-gradient(168deg, #FBF9F4 0%, #F4F1E9 100%);
+    radial-gradient(900px 520px at 88% -6%, #E0EEFF 0%, rgba(224,238,255,0) 60%),
+    radial-gradient(760px 480px at 4% 108%, #F0F0F5 0%, rgba(240,240,245,0) 60%),
+    linear-gradient(168deg, #FFFFFF 0%, #F5F5F7 100%);
   border-bottom:1px solid var(--line2);
 }
 header.hero .mesh{
@@ -202,7 +199,7 @@ header.hero h1 em{
 }
 header.hero h1 em::after{
   content:""; position:absolute; left:0; right:0; bottom:.06em; height:.32em;
-  background:linear-gradient(90deg, rgba(28,122,91,.18), rgba(154,115,39,.14));
+  background:linear-gradient(90deg, rgba(0,102,204,.12), rgba(134,134,139,.08));
   border-radius:4px; z-index:-1;
 }
 .hero-lede{
@@ -424,14 +421,14 @@ figure.chart figcaption{
 }
 figure.chart figcaption::before{
   content:""; width:18px; height:3px; border-radius:3px;
-  background:linear-gradient(90deg,var(--jade),var(--brass));
+  background:linear-gradient(90deg,var(--jade),var(--sky));
 }
 .chart-box{position:relative; height:340px; margin-top:8px;}
 
 /* footer */
 footer.foot{
-  margin-left:284px;
-  background:linear-gradient(180deg, var(--paper2), #EFEBE1);
+  margin-left:0;
+  background:linear-gradient(180deg, var(--paper2), var(--paper));
   border-top:1px solid var(--line);
   padding:clamp(56px,7vw,84px) clamp(24px,6vw,96px) 64px;
 }
@@ -635,16 +632,16 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
     <svg class="mesh" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <defs>
         <radialGradient id="g1" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="#1C7A5B" stop-opacity="0.16"/>
-          <stop offset="100%" stop-color="#1C7A5B" stop-opacity="0"/>
+          <stop offset="0%" stop-color="#0066CC" stop-opacity="0.12"/>
+          <stop offset="100%" stop-color="#0066CC" stop-opacity="0"/>
         </radialGradient>
         <radialGradient id="g2" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="#9A7327" stop-opacity="0.14"/>
-          <stop offset="100%" stop-color="#9A7327" stop-opacity="0"/>
+          <stop offset="0%" stop-color="#86868B" stop-opacity="0.08"/>
+          <stop offset="100%" stop-color="#86868B" stop-opacity="0"/>
         </radialGradient>
         <linearGradient id="ln" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#1C7A5B" stop-opacity="0.5"/>
-          <stop offset="100%" stop-color="#9A7327" stop-opacity="0.4"/>
+          <stop offset="0%" stop-color="#0066CC" stop-opacity="0.35"/>
+          <stop offset="100%" stop-color="#86868B" stop-opacity="0.25"/>
         </linearGradient>
       </defs>
       <circle cx="980" cy="120" r="320" fill="url(#g1)"/>
@@ -658,11 +655,11 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
     <div class="hero-inner">
       <div class="hero-eyebrow">市場研究報告 · Strategic Market Study</div>
       <h1>台灣養老照護產業，正站在日本 <em>2005 年</em> 的起跑線上。</h1>
-      <p class="hero-lede">台灣 2025 年邁入超高齡社會——正是日本 2005 年跨過的門檻。本報告以日本厚生勞動省統計、上市照護企業財報、不動產開發商旗艦案例為一手依據，對照台灣國發會與衛福部官方數據，評估在台發展高端、中端、平價養老機構的可行性、商業模式與財務回報。</p>
+      <p class="hero-lede">台灣已於 2025 年邁入超高齡社會——正是日本 2005 年跨過的門檻。本報告以日本厚生勞動省統計、上市照護企業財報、不動產開發商旗艦案例為一手依據，對照台灣國發會與衛福部官方數據，評估在台發展高端、中端、平價養老機構的可行性、商業模式與財務回報。</p>
       <div class="hero-byline">作者 <strong>林書毅</strong></div>
       <div class="kpi-row">
         <div class="kpi"><div class="n">19.2<s>%</s></div><div class="l">2024 台灣 65+ 人口占比，2025 突破 20%</div></div>
-        <div class="kpi"><div class="n">3.6<s>兆</s></div><div class="l">工研院估台灣 2025 銀髮經濟規模（新台幣）</div></div>
+        <div class="kpi"><div class="n">3.6<s>兆</s></div><div class="l">工研院估台灣 2025 年銀髮經濟規模（新台幣）</div></div>
         <div class="kpi"><div class="n">11.9<s>兆</s></div><div class="l">日本 2024 年度介護總費用（日圓）</div></div>
         <div class="kpi"><div class="n">2,100<s>億</s></div><div class="l">日本生命收購龍頭ニチイ金額（日圓）</div></div>
       </div>
@@ -679,7 +676,7 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
   </div>
   <p>本報告以日本一手資料（厚生勞動省統計、上市照護企業財報、三井不動產等開發商旗艦案例）對照台灣官方數據（國發會、衛福部），評估在台發展養老照護事業的可行性。核心結論可濃縮為以下五點：</p>
   <ol class="num">
-    <li><strong>時機正確</strong>：台灣 2025 年邁入超高齡社會，正處於日本 2005 年的同一位置。日本用 20 年驗證了養老產業的規模化獲利路徑與機構資本進場邏輯（日本生命 2,100 億日圓收購ニチイ），台灣享有清晰的「劇本」與約 20 年的需求紅利窗口。</li>
+    <li><strong>時機正確</strong>：台灣已於 2025 年邁入超高齡社會，正處於日本 2005 年的同一位置。日本用 20 年驗證了養老產業的規模化獲利路徑與機構資本進場邏輯（日本生命 2,100 億日圓收購ニチイ），台灣享有清晰的「劇本」與約 20 年的需求紅利窗口。</li>
     <li><strong>需求堅實</strong>：65 歲以上占比將由 2024 年的 19.2% 單向升至 2070 年的 46.5%；真正的住宿照護需求引爆點落在 2030–2045 年（嬰兒潮進入 80–85 歲失能放量區間）。家庭照顧能量崩解（單人＋雙人戶近六成），強制需求外溢至付費機構。</li>
     <li><strong>缺口明確</strong>：台灣市場呈「啞鈴型」——高端被大集團佔據、平價是中小業者紅海，中間「中產負擔得起、品質體面、可連續照護」的級距結構性空白。這是最大的價值白地。</li>
     <li><strong>模式清晰</strong>：建議「以中端為核心、CCRC 連續照護為承諾、醫養結合為護城河、多品牌平台為擴張引擎」。導入日本的服務 Know-how（飯店式服務、科技照護、健康促進），但採台灣本地化的輕資產收費，揚棄日本的入居一時金與保險給付依賴。</li>
@@ -728,8 +725,8 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
     台灣不是「即將老化」，而是「正在加速老化且不可逆」。超高齡社會的 2025 年並非終點而是起點：真正的照護需求高峰，將落在戰後嬰兒潮（1946–1964 年生）大規模進入 75 歲以上「後期高齡」的 <strong>2030–2045 年</strong>。一個 2026–2028 年動工、2029–2031 年開業的養老機構，恰好能搭上這波需求海嘯的主升段。
   </div>
 
-  <h3>三、未來十年人口預測與高齡人口成長率</h3>
-  <p>聚焦於投資決策最相關的「未來十年」（2025–2035）窗口，可觀察到三個結構性訊號：</p>
+  <h3>三、近十年人口預測與高齡人口成長率</h3>
+  <p>聚焦於投資決策最相關的近十年（2025–2035）窗口，可觀察到三個結構性訊號：</p>
   <div class="tw">
   <table>
     <caption>表 1.1 ｜台灣高齡化關鍵時點與指標（依國發會中推估）</caption>
@@ -766,7 +763,7 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
   <p>少子化使傳統「多名子女輪流照顧」的模式不復存在。智齡科技引述的調查更指出，台灣正快速邁向「零家庭照顧者」時代——當失能長者無人可依、子女又無力辭職照顧時，<strong>付費的專業機構照護便從「選項」變成「必需」</strong>。這是台灣養老產業最堅實的需求基本盤。</p>
 
   <h3>六、銀髮經濟市場規模</h3>
-  <p>需求的貨幣化規模同樣可觀。工研院估計，台灣銀髮消費市場規模在 <strong>2025 年將達新台幣 3.6 兆元</strong>，涵蓋食、醫、住、行、娛、學等全面向消費〔來源：海基會《交流》雜誌、若水數位〕。值得注意的是，當前的高齡客群特徵與上一代截然不同：</p>
+  <p>需求的貨幣化規模同樣可觀。工研院估計，台灣銀髮消費市場規模在 <strong>2025 年達新台幣 3.6 兆元</strong>，涵蓋食、醫、住、行、娛、學等全面向消費〔來源：海基會《交流》雜誌、若水數位〕。值得注意的是，當前的高齡客群特徵與上一代截然不同：</p>
   <ul class="bul">
     <li><strong>「有錢有閒」的一代</strong>：戰後嬰兒潮世代多擁有自有房產、無負債，是台灣財富最自由的群體，收入可支配比例高。</li>
     <li><strong>願意為品質付費</strong>：相較前代，新一輩長者更具自我意識與消費意願，願意花錢充實退休生活、維持高品質照護。</li>
@@ -887,7 +884,7 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
     <li><strong>2005 年：破 20%，成為全球首批超高齡社會。</strong></li>
     <li>2024 年：65+ 占比已逾 29%，邁向「超超高齡」，並出現都市高齡人口續增、過疎地區高齡人口轉減的區域分化。</li>
   </ul>
-  <p>日本的關鍵啟示在於：超高齡社會並非危機的終點，而是一個長達數十年的「產業化窗口」。台灣 2025 年的位置，幾乎就是日本 2005 年的翻版。</p>
+  <p>日本的關鍵啟示在於：超高齡社會並非危機的終點，而是一個長達數十年的「產業化窗口」。台灣現今的位置，幾乎就是日本 2005 年的翻版。</p>
 
   <h3>二、日本長照保險制度（介護保險）</h3>
   <p>日本養老產業之所以能規模化，根基在於 2000 年 4 月上路的<strong>介護保險制度</strong>——一套強制性社會保險（40 歲以上全民納保），由保險給付支撐照護服務的支付能力。這與台灣以稅收為主的長照 2.0 有本質差異，也是日本市場「付得起、養得活」民間業者的制度底盤。其規模成長極為驚人〔來源：厚生勞動省〕：</p>
