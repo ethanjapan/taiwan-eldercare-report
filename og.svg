@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F4F6F9"/>
+    </linearGradient>
+    <linearGradient id="w1" x1="0.2" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#DCEBFF"/>
+      <stop offset="1" stop-color="#A7C9F2"/>
+    </linearGradient>
+    <linearGradient id="w2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EEF2F7"/>
+      <stop offset="1" stop-color="#C4D1DF"/>
+    </linearGradient>
+    <linearGradient id="w3" x1="0" y1="0.2" x2="1" y2="1">
+      <stop offset="0" stop-color="#C3DEFF"/>
+      <stop offset="1" stop-color="#8FB9EC"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1200" fill="url(#bg)"/>
+
+  <!-- waves (within center band y285-915) -->
+  <path d="M1200,345 C980,405 1080,535 860,585 C1040,565 1200,495 1200,495 Z" fill="url(#w1)" opacity="0.5"/>
+  <path d="M1200,585 C1020,635 1080,755 900,795 C1080,775 1200,715 1200,715 Z" fill="url(#w3)" opacity="0.35"/>
+  <path d="M640,915 C820,785 1000,845 1200,705 L1200,915 Z" fill="url(#w2)" opacity="0.9"/>
+  <path d="M820,915 C980,825 1080,845 1200,785 L1200,915 Z" fill="url(#w1)" opacity="0.85"/>
+  <path d="M980,915 C1080,865 1150,870 1200,845 L1200,915 Z" fill="url(#w3)" opacity="0.8"/>
+
+  <!-- brand -->
+  <text x="80" y="369" font-family="PingFang TC, sans-serif" font-size="26" font-weight="700" fill="#1D1D1F" letter-spacing="2">銀齡照護<tspan fill="#0066CC">事業</tspan></text>
+  <rect x="80" y="385" width="40" height="2" fill="#C7E0F4"/>
+  <text x="80" y="409" font-family="Menlo, monospace" font-size="13" fill="#86868B" letter-spacing="3">SENIOR-CARE STRATEGY · TW × JP · 2026</text>
+
+  <!-- eyebrow -->
+  <text x="80" y="499" font-family="Menlo, monospace" font-size="17" fill="#0066CC" letter-spacing="3">市場研究報告 · STRATEGIC MARKET STUDY</text>
+
+  <!-- title -->
+  <text x="76" y="591" font-family="Songti TC, serif" font-size="72" font-weight="700" fill="#1D1D1F" letter-spacing="1">台灣養老照護產業</text>
+  <text x="76" y="681" font-family="Songti TC, serif" font-size="72" font-weight="700" fill="#1D1D1F" letter-spacing="1">正站在日本 <tspan fill="#0066CC">2005 年</tspan></text>
+
+  <!-- lede -->
+  <text x="80" y="751" font-family="PingFang TC, sans-serif" font-size="25" fill="#6E6E73">借鏡日本成熟模式，評估在台發展養老事業的</text>
+  <text x="80" y="787" font-family="PingFang TC, sans-serif" font-size="25" fill="#6E6E73">可行性、商業模式與財務回報</text>
+
+  <!-- author -->
+  <rect x="80" y="841" width="26" height="2.5" fill="#86868B"/>
+  <text x="120" y="849" font-family="PingFang TC, sans-serif" font-size="22" fill="#1D1D1F">作者　<tspan font-weight="700">林書毅</tspan></text>
+</svg>
