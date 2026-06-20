@@ -185,13 +185,13 @@ header.hero{
   position:relative; overflow:hidden;
   padding:clamp(70px,11vw,140px) clamp(28px,6vw,96px) clamp(56px,7vw,88px);
   background:
-    radial-gradient(900px 520px at 88% -6%, #E0EEFF 0%, rgba(224,238,255,0) 60%),
-    radial-gradient(760px 480px at 4% 108%, #F0F0F5 0%, rgba(240,240,245,0) 60%),
+    linear-gradient(102deg, #FFFFFF 22%, rgba(255,255,255,.62) 44%, rgba(255,255,255,0) 70%),
+    url('hero-bg.jpg') center right / cover no-repeat,
     linear-gradient(168deg, #FFFFFF 0%, #F5F5F7 100%);
   border-bottom:1px solid var(--line2);
 }
 header.hero .mesh{
-  position:absolute; inset:0; pointer-events:none; opacity:.55;
+  display:none;
 }
 .hero-inner{position:relative; max-width:var(--maxw); margin:0 auto;}
 .hero-eyebrow{
