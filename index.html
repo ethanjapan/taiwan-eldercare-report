@@ -2,10 +2,23 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
+<script>document.documentElement.className+=' js';</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>台灣養老照護事業 市場研究報告｜借鏡日本成熟模式</title>
 <meta name="description" content="以日本厚生勞動省統計、上市照護企業財報與不動產旗艦案例為一手依據，對照台灣官方數據，評估在台發展高端、中端、平價養老機構的可行性、商業模式與財務回報。">
 <meta name="author" content="林書毅">
+<meta property="og:type" content="article">
+<meta property="og:title" content="台灣養老照護事業 市場研究報告｜借鏡日本成熟模式">
+<meta property="og:description" content="以日本厚生勞動省統計、上市照護企業財報與不動產旗艦案例為一手依據，評估在台發展高端、中端、平價養老機構的可行性、商業模式與財務回報。">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:url" content="https://ethanjapan.github.io/taiwan-eldercare-report/">
+<meta property="og:image" content="https://ethanjapan.github.io/taiwan-eldercare-report/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="台灣養老照護事業 市場研究報告">
+<meta name="twitter:description" content="借鏡日本成熟模式，評估台灣養老機構的可行性與財務回報。">
+<meta name="twitter:image" content="https://ethanjapan.github.io/taiwan-eldercare-report/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&family=Noto+Sans+TC:wght@300;400;500;600;700;900&family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -216,6 +229,23 @@ header.hero h1 em::after{
 .hero-byline strong{
   color:var(--brass); font-weight:600; font-size:15px; letter-spacing:.04em;
 }
+.byline-role{
+  color:var(--txt2); font-weight:500; letter-spacing:.02em; font-size:13px;
+  padding-left:10px; border-left:1px solid var(--line);
+}
+.hero-compare{
+  margin:34px 0 0; display:flex; align-items:center; gap:clamp(18px,3.5vw,52px);
+  padding:clamp(22px,3vw,30px) clamp(26px,4vw,42px); border-radius:22px;
+  background:linear-gradient(120deg, var(--jade-soft) 0%, var(--card) 80%);
+  border:1px solid var(--jade-line); box-shadow:var(--shadow-sm);
+  width:fit-content; max-width:100%;
+}
+.cmp-item{text-align:center;}
+.cmp-flag{font-family:var(--mono); font-size:11px; letter-spacing:.16em; font-weight:600; color:var(--brass); text-transform:uppercase; margin-bottom:6px;}
+.cmp-y{font-family:var(--serif); font-weight:800; font-size:clamp(38px,5.6vw,64px); line-height:1; color:var(--jade-d); letter-spacing:-.02em; font-feature-settings:"tnum";}
+.cmp-l{margin-top:9px; font-size:12.5px; color:var(--txt2); line-height:1.5; white-space:nowrap;}
+.cmp-arrow{display:flex; flex-direction:column; align-items:center; gap:7px; font-family:var(--mono); font-size:12px; letter-spacing:.08em; color:var(--brass); font-weight:700; white-space:nowrap;}
+.cmp-arrow::before{content:""; width:clamp(36px,5vw,68px); height:2px; background:linear-gradient(90deg,var(--jade),var(--brass)); border-radius:2px;}
 .kpi-row{
   margin-top:clamp(40px,5vw,58px);
   display:grid; grid-template-columns:repeat(4,1fr); gap:18px;
@@ -261,6 +291,13 @@ section.ch:first-of-type{border-top:none;}
 
 /* chapter head */
 .ch-head{margin-bottom:clamp(34px,4vw,52px);}
+.ch-icon{width:54px;height:54px;border-radius:15px;background:linear-gradient(135deg,var(--jade-soft),var(--card));border:1px solid var(--jade-line);display:flex;align-items:center;justify-content:center;margin-bottom:20px;box-shadow:var(--shadow-sm);}
+.ch-icon svg{width:28px;height:28px;stroke:var(--jade-d);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
+.ch-kpi{display:flex; flex-wrap:wrap; gap:14px; margin-top:28px;}
+.ch-kpi .k{padding:14px 22px; border:1px solid var(--jade-line); border-radius:14px; background:linear-gradient(135deg,var(--jade-soft),var(--card)); min-width:124px;}
+.ch-kpi .kn{font-family:var(--serif); font-size:26px; font-weight:700; color:var(--jade-d); line-height:1; letter-spacing:-.01em; font-feature-settings:"tnum";}
+.ch-kpi .kn s{font-size:.5em; text-decoration:none; margin-left:3px; font-weight:600;}
+.ch-kpi .kl{font-size:11.5px; color:var(--txt2); margin-top:7px; line-height:1.45;}
 .ch-num{
   font-family:var(--mono); font-size:12px; font-weight:600;
   letter-spacing:.3em; color:var(--brass); text-transform:uppercase;
@@ -433,6 +470,11 @@ footer.foot{
   padding:clamp(56px,7vw,84px) clamp(24px,6vw,96px) 64px;
 }
 footer.foot .foot-inner{max-width:var(--maxw); margin:0 auto;}
+.author-card{display:flex; gap:20px; align-items:flex-start; padding:0 0 32px; margin-bottom:36px; border-bottom:1px solid var(--line);}
+.author-avatar{width:62px; height:62px; border-radius:50%; flex-shrink:0; background:linear-gradient(135deg, var(--jade), var(--jade-d)); color:#fff; display:flex; align-items:center; justify-content:center; font-family:var(--serif); font-size:28px; font-weight:700; box-shadow:var(--shadow-sm);}
+.author-name{font-family:var(--serif); font-size:20px; font-weight:700; color:var(--ink); letter-spacing:.01em;}
+.author-role{font-size:12.5px; color:var(--jade-d); letter-spacing:.05em; margin-top:4px; font-weight:600;}
+.author-bio{margin:11px 0 0; font-size:13.5px; line-height:1.78; color:var(--txt2); max-width:64ch;}
 footer.foot h3{
   font-family:var(--serif); font-weight:700; color:var(--ink);
   font-size:24px; margin:0 0 14px; display:flex; align-items:center; gap:14px;
@@ -455,8 +497,8 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
 }
 
 /* reveal animation */
-.reveal{opacity:0; transform:translateY(18px); transition:opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1);}
-.reveal.in{opacity:1; transform:none;}
+html.js .reveal{opacity:0; transform:translateY(18px); transition:opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1);}
+html.js .reveal.in{opacity:1; transform:none;}
 @media (prefers-reduced-motion:reduce){
   .reveal{opacity:1; transform:none; transition:none;}
   .scrollcue .dot::after{animation:none;}
@@ -679,7 +721,20 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
       <div class="hero-eyebrow">市場研究報告 · Strategic Market Study</div>
       <h1>台灣養老照護產業，正站在日本 <em>2005 年</em> 的起跑線上。</h1>
       <p class="hero-lede">台灣已於 2025 年邁入超高齡社會——正是日本 2005 年跨過的門檻。本報告以日本厚生勞動省統計、上市照護企業財報、不動產開發商旗艦案例為一手依據，對照台灣國發會與衛福部官方數據，評估在台發展高端、中端、平價養老機構的可行性、商業模式與財務回報。</p>
-      <div class="hero-byline">作者 <strong>林書毅</strong></div>
+      <div class="hero-byline">作者 <strong>林書毅</strong> <span class="byline-role">市場研究・策略規劃</span></div>
+      <div class="hero-compare">
+        <div class="cmp-item">
+          <div class="cmp-flag">日本</div>
+          <div class="cmp-y">2005</div>
+          <div class="cmp-l">邁入超高齡社會</div>
+        </div>
+        <div class="cmp-arrow">相隔 20 年</div>
+        <div class="cmp-item">
+          <div class="cmp-flag">台灣</div>
+          <div class="cmp-y">2025</div>
+          <div class="cmp-l">站上同一起跑線</div>
+        </div>
+      </div>
       <div class="kpi-row">
         <div class="kpi"><div class="n">19.2<s>%</s></div><div class="l">2024 台灣 65+ 人口占比，2025 突破 20%</div></div>
         <div class="kpi"><div class="n">3.6<s>兆</s></div><div class="l">工研院估台灣 2025 年銀髮經濟規模（新台幣）</div></div>
@@ -718,9 +773,15 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
 <!-- ===================== 第一章 ===================== -->
 <section class="ch" id="c1">
   <div class="ch-head">
+    <div class="ch-icon"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M17 7h4v4"/></svg></div>
     <div class="ch-num">CHAPTER 01</div>
     <h2>台灣高齡化市場分析</h2>
     <div class="sub">人口結構、長照需求與銀髮經濟規模的全景掃描</div>
+    <div class="ch-kpi">
+      <div class="k"><div class="kn">19.2<s>%</s></div><div class="kl">65 歲以上占比（2024）</div></div>
+      <div class="k"><div class="kn">46.5<s>%</s></div><div class="kl">推估占比（2070）</div></div>
+      <div class="k"><div class="kn">3.6<s>兆</s></div><div class="kl">銀髮經濟規模（新台幣）</div></div>
+    </div>
   </div>
 
   <p>任何養老事業的可行性，最終都建立在一條人口曲線之上。台灣的這條曲線，正以全球罕見的速度向上彎折。根據國家發展委員會 2024 年 10 月公布的《2024–2070 年中華民國人口推估報告》（每兩年更新一次的官方權威推估），台灣的人口結構已進入歷史性的轉折點，其變化的劇烈程度，將同時帶來最嚴峻的社會挑戰與最龐大的產業機會。</p>
@@ -804,6 +865,7 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
 <!-- ===================== 第二章 ===================== -->
 <section class="ch" id="c2">
   <div class="ch-head">
+    <div class="ch-icon"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4.5h6V7H9z"/><path d="M8.5 11.5h7M8.5 15h4.5"/></svg></div>
     <div class="ch-num">CHAPTER 02</div>
     <h2>台灣長照產業現況</h2>
     <div class="sub">長照 2.0 政策、機構體系、市場規模與供需缺口</div>
@@ -893,9 +955,15 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
 <!-- ===================== 第三章 ===================== -->
 <section class="ch" id="c3">
   <div class="ch-head">
+    <div class="ch-icon"><svg viewBox="0 0 24 24"><path d="M4 7h16M5.5 4c4 1.6 9 1.6 13 0M7 7v13M17 7v13M6.2 11h11.6"/></svg></div>
     <div class="ch-num">CHAPTER 03</div>
     <h2>日本養老產業研究</h2>
     <div class="sub">以厚生勞動省統計、上市企業財報、不動產旗艦案例為一手依據</div>
+    <div class="ch-kpi">
+      <div class="k"><div class="kn">11.9<s>兆</s></div><div class="kl">日本照護費用（日圓 · 2024）</div></div>
+      <div class="k"><div class="kn">27,000<s>室</s></div><div class="kl">SOMPO 居室數（國內第 1）</div></div>
+      <div class="k"><div class="kn">5<s>億</s></div><div class="kl">西麻布最高入住金（日圓）</div></div>
+    </div>
   </div>
 
   <p>日本是全球養老產業最成熟、最值得台灣借鏡的市場。它在 2005 年成為全球首批超高齡社會（65+ 占比破 20%），比台灣早整整 20 年。更重要的是，日本建立了一套「<strong>社會保險（介護保險）＋多層次居住產品＋民間規模化營運</strong>」的完整體系，幾乎為台灣提供了一份可逐項對照的發展腳本。本章依研究要求，<strong>優先採用日本厚生勞動省、上市照護企業與不動產開發商之一手原文資料</strong>。</p>
@@ -1110,6 +1178,7 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
 <!-- ===================== 第四章 ===================== -->
 <section class="ch" id="c4">
   <div class="ch-head">
+    <div class="ch-icon"><svg viewBox="0 0 24 24"><path d="M12 3v17M6 20h12M4 7l8-2 8 2M6 7l-2 5h4l-2-5Zm12 0-2 5h4l-2-5Z"/></svg></div>
     <div class="ch-num">CHAPTER 04</div>
     <h2>台日市場比較分析</h2>
     <div class="sub">哪些日本模式可直接導入、哪些需調整、哪些不適合台灣</div>
@@ -1177,6 +1246,7 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
 <!-- ===================== 第五章 ===================== -->
 <section class="ch" id="c5">
   <div class="ch-head">
+    <div class="ch-icon"><svg viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5-9-5ZM4 12l8 4.5L20 12M4 16l8 4.5L20 16"/></svg></div>
     <div class="ch-num">CHAPTER 05</div>
     <h2>商業模式設計</h2>
     <div class="sub">高端、中端、平價三種機構的完整商業藍圖</div>
@@ -1282,9 +1352,15 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
 <!-- ===================== 第六章 ===================== -->
 <section class="ch" id="c6">
   <div class="ch-head">
+    <div class="ch-icon"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M6 21V11M11 21V5M16 21v-7M21 21V8"/></svg></div>
     <div class="ch-num">CHAPTER 06</div>
     <h2>財務可行性分析</h2>
     <div class="sub">以「中端旗艦據點」為例的三情境財務模型</div>
+    <div class="ch-kpi">
+      <div class="k"><div class="kn">12<s>%</s></div><div class="kl">稅前淨利率（一般情境）</div></div>
+      <div class="k"><div class="kn">9–11<s>年</s></div><div class="kl">投資回收期</div></div>
+      <div class="k"><div class="kn">200<s>床</s></div><div class="kl">中端旗艦據點規模</div></div>
+    </div>
   </div>
 
   <p>本章以第五章建議的核心模式——「<strong>中端、200 床、輕資產（土地長租）</strong>」單一據點為標的，建立財務模型。所有數字為<strong>基於台灣公開收費與成本常識的情境估算</strong>，目的在於展示獲利結構與敏感因子，<strong>實際投資前須以委任查核（DD）數字取代</strong>。本報告非財務或投資建議。</p>
@@ -1375,6 +1451,7 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
 <!-- ===================== 第七章 ===================== -->
 <section class="ch" id="c7">
   <div class="ch-head">
+    <div class="ch-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1.2" fill="#004499" stroke="none"/></svg></div>
     <div class="ch-num">CHAPTER 07</div>
     <h2>競爭者分析</h2>
     <div class="sub">主要業者解構與「尚未被滿足的市場需求」</div>
@@ -1430,6 +1507,7 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
 <!-- ===================== 第八章 ===================== -->
 <section class="ch" id="c8">
   <div class="ch-head">
+    <div class="ch-icon"><svg viewBox="0 0 24 24"><path d="M6 21V4"/><path d="M6 4h12l-2.5 4L18 12H6"/></svg></div>
     <div class="ch-num">CHAPTER 08</div>
     <h2>市場進入策略</h2>
     <div class="sub">第一年 · 第三年 · 第五年發展藍圖</div>
@@ -1481,9 +1559,15 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
 <!-- ===================== 第九章 ===================== -->
 <section class="ch" id="c9">
   <div class="ch-head">
+    <div class="ch-icon"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v5c0 5-3.4 8.2-8 10-4.6-1.8-8-5-8-10V6l8-3Z"/><path d="M8.5 12l2.3 2.3L15.5 10"/></svg></div>
     <div class="ch-num">CHAPTER 09</div>
     <h2>風險評估</h2>
     <div class="sub">六大風險與因應策略</div>
+    <div class="ch-kpi">
+      <div class="k"><div class="kn">6<s>大</s></div><div class="kl">主要風險類別</div></div>
+      <div class="k"><div class="kn">57–69<s>萬</s></div><div class="kl">日本 2040 人力缺口（殷鑑）</div></div>
+      <div class="k"><div class="kn">Day 1</div><div class="kl">法規與人才須即刻部署</div></div>
+    </div>
   </div>
 
   <div class="tw">
@@ -1516,6 +1600,7 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
 <!-- ===================== 第十章 ===================== -->
 <section class="ch" id="c10">
   <div class="ch-head">
+    <div class="ch-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.2l2.6 2.6L16 9"/></svg></div>
     <div class="ch-num">CHAPTER 10</div>
     <h2>結論與建議</h2>
     <div class="sub">五個關鍵問題的明確回答</div>
@@ -1575,6 +1660,14 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
 <!-- ===================== Footer / Sources ===================== -->
 <footer class="foot" id="sources">
   <div class="foot-inner">
+  <div class="author-card">
+    <div class="author-avatar">林</div>
+    <div class="author-meta">
+      <div class="author-name">林書毅</div>
+      <div class="author-role">市場研究與策略規劃</div>
+      <p class="author-bio">本報告由林書毅獨立編製，秉持「一手原文優先」原則，整合日本厚生勞動省、台灣國發會與衛福部之官方統計、上市照護企業財報及產業研究機構報告，對照台日市場差異，提出在台發展養老照護事業的策略建議。</p>
+    </div>
+  </div>
   <h3>資料來源</h3>
   <p style="font-size:13.5px;color:var(--txt2);max-width:920px;">本報告優先採用台日官方統計與一手資料（厚生勞動省、國發會、衛福部、上市企業財報、不動產開發商官網），輔以產業研究與媒體報導交叉驗證。財務與商業模式數字為情境估算，僅供規劃參考。</p>
   <ul class="src-list">
@@ -1619,6 +1712,8 @@ window.addEventListener('DOMContentLoaded',function(){
   // ---- reveal on scroll ----
   var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target);}});},{threshold:.08, rootMargin:'0px 0px -40px 0px'});
   document.querySelectorAll('section.ch > *, .hero-inner > *').forEach(function(el){el.classList.add('reveal'); ro.observe(el);});
+  // fallback: if the observer never fires (slow load / edge cases), reveal in-view items after load
+  window.addEventListener('load',function(){setTimeout(function(){document.querySelectorAll('.reveal:not(.in)').forEach(function(el){if(el.getBoundingClientRect().top < window.innerHeight){el.classList.add('in');}});},400);});
 
   // ---- charts ----
   if(typeof Chart==='undefined')return;
