@@ -575,6 +575,28 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
   section.ch{page-break-inside:avoid;}
   .card,.note,.tw,figure.chart{box-shadow:none;}
 }
+
+/* ---------- reference facility cards ---------- */
+.ref-intro{font-size:15px; color:var(--txt2); line-height:1.75; margin:0 0 28px;}
+.ref-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin:0 0 48px;}
+.ref-card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:24px 22px; display:flex; flex-direction:column; gap:14px; transition:box-shadow .2s, transform .2s;}
+.ref-card:hover{box-shadow:var(--shadow-md); transform:translateY(-2px);}
+.ref-badge{display:inline-flex; align-items:center; padding:3px 10px; border-radius:99px; font-size:11px; font-weight:700; letter-spacing:.03em; margin-bottom:6px; width:fit-content;}
+.ref-badge.hi{background:var(--jade-soft); color:var(--jade-d);}
+.ref-badge.mid{background:var(--brass-soft); color:var(--ink); border:1px solid var(--brass-line);}
+.ref-badge.low{background:var(--line3); color:var(--txt2); border:1px solid var(--line2);}
+.ref-name{font-family:var(--serif); font-size:16px; font-weight:700; color:var(--ink); margin:0 0 2px;}
+.ref-op{font-size:11.5px; color:var(--mut); margin:0 0 10px; letter-spacing:.01em;}
+.ref-body{flex:1;}
+.ref-desc{font-size:13.5px; color:var(--txt2); line-height:1.72; margin:0;}
+.ref-foot{display:flex; align-items:center; gap:14px; padding-top:14px; border-top:1px solid var(--line2);}
+.ref-qr{width:68px; height:68px; flex-shrink:0; border-radius:8px; border:1px solid var(--line2); display:block;}
+.ref-url-wrap{display:flex; flex-direction:column; gap:4px;}
+.ref-url-label{font-size:10.5px; color:var(--mut); letter-spacing:.04em; text-transform:uppercase;}
+.ref-url{font-size:12.5px; color:var(--jade); word-break:break-all; text-decoration:none; line-height:1.5; font-weight:500;}
+.ref-url:hover{text-decoration:underline; color:var(--jade-d);}
+@media(max-width:1060px){.ref-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:560px){.ref-grid{grid-template-columns:1fr; gap:14px;} .ref-card{padding:20px 16px;}}
 </style>
 </head>
 <body>
@@ -994,6 +1016,93 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
   <div class="note clay">
     <span class="tag">第三章結論 · 對台灣最重要的警示</span>
     日本用 20 年驗證了三條鐵律：<strong>（1）制度決定產業天花板</strong>——介護保險的社會保險底盤，是日本養老產業規模化的根本，台灣須留意自身稅收制長照的支付侷限；<strong>（2）高端靠「不動產品牌＋全週期照護」，中端靠「規模化＋多品牌」，平價靠「成本與人力管理」</strong>，三種市場是三種完全不同的生意；<strong>（3）人力，而非需求，才是這個產業真正的瓶頸</strong>。台灣若不從第一天就把「外籍人力、科技導入、留才機制」寫進商業模式，必將重蹈日本人力崩潰的覆轍。
+  </div>
+
+  <h3>七、日本主要参照施設 — 公式サイト &amp; QRコード</h3>
+  <p class="ref-intro">本章の記述根拠となった日本代表施設・企業の公式サイトです。QRコードをスキャンするか、リンクをクリックすると最新情報・費用・空室状況等をご確認いただけます。</p>
+
+  <div class="ref-grid">
+
+    <div class="ref-card">
+      <div class="ref-body">
+        <div class="ref-badge hi">高端 · CCRC</div>
+        <div class="ref-name">パークウェルステイト</div>
+        <div class="ref-op">三井不動産レジデンシャルウェルネス</div>
+        <p class="ref-desc">西麻布旗艦の入居一時金最高5億円超。三井不動産ブランド×医療連携×ホスピタリティを一体化したCCRC型シニア住宅の日本最高峰。本報告の「高端市場標竿」として引用。</p>
+      </div>
+      <div class="ref-foot">
+        <img class="ref-qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fwww.mfrw.co.jp%2Fparkwellstate%2F&size=160x160&color=1d1d1f&bgcolor=ffffff&qzone=1" alt="QR Code" loading="lazy">
+        <div class="ref-url-wrap">
+          <span class="ref-url-label">Official Site</span>
+          <a class="ref-url" href="https://www.mfrw.co.jp/parkwellstate/" target="_blank" rel="noopener">mfrw.co.jp/<wbr>parkwellstate/</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ref-card">
+      <div class="ref-body">
+        <div class="ref-badge hi">高端 · 介護付</div>
+        <div class="ref-name">アリア（Aria）</div>
+        <div class="ref-op">ベネッセスタイルケア</div>
+        <p class="ref-desc">業界第1位・ベネッセグループの旗艦ブランド。24時間看護師常駐で「介護が必要になっても、誇り高く生きる」を掲げる。本報告の「ブランド戦略・差異化」の引用元。</p>
+      </div>
+      <div class="ref-foot">
+        <img class="ref-qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fkaigo.benesse-style-care.co.jp%2Fseries_aria&size=160x160&color=1d1d1f&bgcolor=ffffff&qzone=1" alt="QR Code" loading="lazy">
+        <div class="ref-url-wrap">
+          <span class="ref-url-label">Official Site</span>
+          <a class="ref-url" href="https://kaigo.benesse-style-care.co.jp/series_aria" target="_blank" rel="noopener">kaigo.benesse-style-care<wbr>.co.jp/series_aria</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ref-card">
+      <div class="ref-body">
+        <div class="ref-badge mid">中端 · 業界最大</div>
+        <div class="ref-name">SOMPOケア</div>
+        <div class="ref-op">SOMPOホールディングス</div>
+        <p class="ref-desc">居室数約27,000室・国内第1位の保険系大手。ワタミ介護買収や印度での人材調達、AIケア記録など成長戦略が先進的。本報告の「中端規模化モデル」として引用。</p>
+      </div>
+      <div class="ref-foot">
+        <img class="ref-qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fwww.sompocare.com%2F&size=160x160&color=1d1d1f&bgcolor=ffffff&qzone=1" alt="QR Code" loading="lazy">
+        <div class="ref-url-wrap">
+          <span class="ref-url-label">Official Site</span>
+          <a class="ref-url" href="https://www.sompocare.com/" target="_blank" rel="noopener">sompocare.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ref-card">
+      <div class="ref-body">
+        <div class="ref-badge mid">中端 · 総合大手</div>
+        <div class="ref-name">ニチイホーム</div>
+        <div class="ref-op">ニチイケアパレス（日本生命グループ）</div>
+        <p class="ref-desc">2023年に日本生命が2,100億円で買収した総合介護大手ニチイ學館のシニア住宅ブランド。「保険×照護×不動産」統合の体現として本報告で引用。</p>
+      </div>
+      <div class="ref-foot">
+        <img class="ref-qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fwww.nichii-carepalace.co.jp%2F&size=160x160&color=1d1d1f&bgcolor=ffffff&qzone=1" alt="QR Code" loading="lazy">
+        <div class="ref-url-wrap">
+          <span class="ref-url-label">Official Site</span>
+          <a class="ref-url" href="https://www.nichii-carepalace.co.jp/" target="_blank" rel="noopener">nichii-carepalace.co.jp</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ref-card">
+      <div class="ref-body">
+        <div class="ref-badge low">平価 · サ高住チェーン</div>
+        <div class="ref-name">学研ここファン</div>
+        <div class="ref-op">株式会社学研ここファン</div>
+        <p class="ref-desc">全国展開のサービス付き高齢者向け住宅チェーン。月額15万円台〜の価格帯で「中産階級が手の届く選択肢」を実現。本報告の「平価連鎖モデル・台灣中端参照」として引用。</p>
+      </div>
+      <div class="ref-foot">
+        <img class="ref-qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fwww.cocofump.co.jp%2F&size=160x160&color=1d1d1f&bgcolor=ffffff&qzone=1" alt="QR Code" loading="lazy">
+        <div class="ref-url-wrap">
+          <span class="ref-url-label">Official Site</span>
+          <a class="ref-url" href="https://www.cocofump.co.jp/" target="_blank" rel="noopener">cocofump.co.jp</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
