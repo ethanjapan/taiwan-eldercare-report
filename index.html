@@ -595,6 +595,7 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
 .ref-url-label{font-size:10.5px; color:var(--mut); letter-spacing:.04em; text-transform:uppercase;}
 .ref-url{font-size:12.5px; color:var(--jade); overflow-wrap:break-word; text-decoration:none; line-height:1.5; font-weight:500;}
 .ref-url:hover{text-decoration:underline; color:var(--jade-d);}
+.tw small{display:block; color:var(--mut); font-weight:400; font-size:11px; margin-top:3px; letter-spacing:0;}
 @media(max-width:1060px){.ref-grid{grid-template-columns:repeat(2,1fr);}}
 @media(max-width:560px){.ref-grid{grid-template-columns:1fr; gap:14px;} .ref-card{padding:20px 16px;}}
 </style>
@@ -682,8 +683,8 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
       <div class="kpi-row">
         <div class="kpi"><div class="n">19.2<s>%</s></div><div class="l">2024 台灣 65+ 人口占比，2025 突破 20%</div></div>
         <div class="kpi"><div class="n">3.6<s>兆</s></div><div class="l">工研院估台灣 2025 年銀髮經濟規模（新台幣）</div></div>
-        <div class="kpi"><div class="n">11.9<s>兆</s></div><div class="l">日本 2024 年度介護總費用（日圓）</div></div>
-        <div class="kpi"><div class="n">2,100<s>億</s></div><div class="l">日本生命收購龍頭ニチイ金額（日圓）</div></div>
+        <div class="kpi"><div class="n">11.9<s>兆</s></div><div class="l">日本 2024 照護總費用（日圓，約 2.6 兆新台幣）</div></div>
+        <div class="kpi"><div class="n">2,100<s>億</s></div><div class="l">日本生命收購龍頭日醫學館（日圓，約 460 億新台幣）</div></div>
       </div>
       <div class="scrollcue">SCROLL<div class="dot"></div></div>
     </div>
@@ -698,10 +699,10 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
   </div>
   <p>本報告以日本一手資料（厚生勞動省統計、上市照護企業財報、三井不動產等開發商旗艦案例）對照台灣官方數據（國發會、衛福部），評估在台發展養老照護事業的可行性。核心結論可濃縮為以下五點：</p>
   <ol class="num">
-    <li><strong>時機正確</strong>：台灣已於 2025 年邁入超高齡社會，正處於日本 2005 年的同一位置。日本用 20 年驗證了養老產業的規模化獲利路徑與機構資本進場邏輯（日本生命 2,100 億日圓收購ニチイ），台灣享有清晰的「劇本」與約 20 年的需求紅利窗口。</li>
+    <li><strong>時機正確</strong>：台灣已於 2025 年邁入超高齡社會，正處於日本 2005 年的同一位置。日本用 20 年驗證了養老產業的規模化獲利路徑與機構資本進場邏輯（日本生命以 2,100 億日圓／約 460 億新台幣收購日醫學館），台灣享有清晰的「劇本」與約 20 年的需求紅利窗口。</li>
     <li><strong>需求堅實</strong>：65 歲以上占比將由 2024 年的 19.2% 單向升至 2070 年的 46.5%；真正的住宿照護需求引爆點落在 2030–2045 年（嬰兒潮進入 80–85 歲失能放量區間）。家庭照顧能量崩解（單人＋雙人戶近六成），強制需求外溢至付費機構。</li>
     <li><strong>缺口明確</strong>：台灣市場呈「啞鈴型」——高端被大集團佔據、平價是中小業者紅海，中間「中產負擔得起、品質體面、可連續照護」的級距結構性空白。這是最大的價值白地。</li>
-    <li><strong>模式清晰</strong>：建議「以中端為核心、CCRC 連續照護為承諾、醫養結合為護城河、多品牌平台為擴張引擎」。導入日本的服務 Know-how（飯店式服務、科技照護、健康促進），但採台灣本地化的輕資產收費，揚棄日本的入居一時金與保險給付依賴。</li>
+    <li><strong>模式清晰</strong>：建議「以中端為核心、CCRC 連續照護為承諾、醫養結合為護城河、多品牌平台為擴張引擎」。導入日本的服務 Know-how（飯店式服務、科技照護、健康促進），但採台灣本地化的輕資產收費，揚棄日本的入住一次金與保險給付依賴。</li>
     <li><strong>回報可期</strong>：中端 200 床據點一般情境下，稅前淨利率約 12%、投資回收期約 9–11 年；連鎖化後第 10 年集團年稅前淨利估達 2–3.5 億元，並具 REITs／策略投資人資本化退出機會。最大風險為「法規不確定性」與「人才短缺」，須於 Day 1 處理。</li>
   </ol>
   <div class="note">
@@ -791,7 +792,7 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
     <li><strong>願意為品質付費</strong>：相較前代，新一輩長者更具自我意識與消費意願，願意花錢充實退休生活、維持高品質照護。</li>
     <li><strong>住的需求供不應求</strong>：資策會調查指出，未來十年友善銀髮住宅的需求量將「遠遠大於供給量」，需求最高的服務依序為居家修繕、家事清潔、健身促進、新科技使用、課程學習。</li>
   </ul>
-  <p>從產業結構看，3.6 兆元的銀髮經濟並非單一市場，而是橫跨多個次產業的集合體，其中與本案最相關的可分為三層：<strong>（1）照護核心層</strong>——住宿照護、居家服務、護理之家、輔具，是剛性需求、現金流穩定；<strong>（2）健康促進層</strong>——預防醫學、健檢、復能、營養、運動，毛利較高且能延伸客戶生命週期；<strong>（3）生活風格層</strong>——餐飲、旅遊、學習、社交、金融與資產傳承規劃，是高端客群願意付費的「尊嚴與品質」溢價來源。一個成熟的養老品牌，最終應從「照護核心」向「健康促進」與「生活風格」延伸，把單純的床位收入，升級為涵蓋長者全生活的高黏著服務生態，這正是日本 Park Wellstate 與 アリア 的價值結構。</p>
+  <p>從產業結構看，3.6 兆元的銀髮經濟並非單一市場，而是橫跨多個次產業的集合體，其中與本案最相關的可分為三層：<strong>（1）照護核心層</strong>——住宿照護、居家服務、護理之家、輔具，是剛性需求、現金流穩定；<strong>（2）健康促進層</strong>——預防醫學、健檢、復能、營養、運動，毛利較高且能延伸客戶生命週期；<strong>（3）生活風格層</strong>——餐飲、旅遊、學習、社交、金融與資產傳承規劃，是高端客群願意付費的「尊嚴與品質」溢價來源。一個成熟的養老品牌，最終應從「照護核心」向「健康促進」與「生活風格」延伸，把單純的床位收入，升級為涵蓋長者全生活的高黏著服務生態，這正是日本 Park Wellstate 與 Aria 的價值結構。</p>
   <p>就高齡人口成長率而言，須區分兩個層次：「65 歲以上總人口」在 2025–2040 年仍維持每年數十萬人的淨增，但真正驅動住宿照護需求的「85 歲以上後期高齡人口」，其成長率將在 2030 年後顯著高於整體高齡人口——這是因為嬰兒潮世代（1946–1964 年生）將於 2031 年起陸續跨入 85 歲。換言之，<strong>養老床位的需求成長曲線，比高齡人口的成長曲線更陡、更晚、更集中</strong>，這給了現在進場者寶貴的「先建置、待需求」的時間差。</p>
 
   <div class="note">
@@ -917,74 +918,74 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
     <tbody>
       <tr><th>第 1 號被保險者（65+）</th><td class="num">2,165 萬人</td><td class="num">3,607 萬人</td><td class="num t-hi">1.7×</td></tr>
       <tr><th>要照護／要支援認定者</th><td class="num">218 萬人</td><td class="num">749 萬人（2024.4）</td><td class="num t-hi">3.2×</td></tr>
-      <tr><th>介護總費用</th><td class="num">—（2001：4.4 兆日圓）</td><td class="num">11.9 兆日圓（2024 年度）</td><td class="num t-hi">2.7×</td></tr>
+      <tr><th>照護總費用</th><td class="num">4.4 兆日圓（2001）<small>≈0.97 兆台幣</small></td><td class="num">11.9 兆日圓（2024）<small>≈2.6 兆台幣</small></td><td class="num t-hi">2.7×</td></tr>
       <tr><th>服務受給者</th><td class="num">149 萬人</td><td class="num">572 萬人</td><td class="num t-hi">3.5×</td></tr>
     </tbody>
   </table>
   </div>
-  <p>2024 年度，日本介護總費用達 <strong>11 兆 9,381 億日圓</strong>（其中介護服務 11.6 兆、介護預防 0.32 兆），認定率約 19.9%，使用者每人每月平均費用約 20.6 萬日圓〔來源：厚生勞動省《介護給付費等實態統計》〕。自付額採所得別 1–3 成負擔，其餘由保險給付。<strong>這套制度把「老人照護」從家庭責任轉化為一個 12 兆日圓、可預期現金流的產業</strong>——這正是台灣長照 3.0 必須面對、也是民間業者必須理解的方向。</p>
+  <p>2024 年度，日本照護總費用達 <strong>11 兆 9,381 億日圓（約 2.6 兆新台幣）</strong>（其中照護服務 11.6 兆、照護預防 0.32 兆），認定率約 19.9%，使用者每人每月平均費用約 20.6 萬日圓（約 4.5 萬新台幣）〔來源：日本厚生勞動省《介護給付費等實態統計》〕。自付額採所得別 1–3 成負擔，其餘由保險給付。<strong>這套制度把「老人照護」從家庭責任轉化為一個 12 兆日圓（約 2.6 兆新台幣）、可預期現金流的產業</strong>——這正是台灣長照 3.0 必須面對、也是民間業者必須理解的方向。</p>
 
   <figure class="chart">
-    <figcaption>圖 3.1 ｜日本介護總費用成長軌跡（兆日圓）</figcaption>
+    <figcaption>圖 3.1 ｜日本照護總費用成長軌跡（兆日圓）</figcaption>
     <div class="chart-box"><canvas id="chart_jp_cost"></canvas></div>
   </figure>
 
-  <h3>三、日本養老機構分類與費用相場</h3>
+  <h3>三、日本養老機構分類與費用行情</h3>
   <p>日本將養老居住產品做了極為細緻的法定分層，從「公費低價、需照護」到「自費高端、可自理」一應俱全。理解這套分類，是設計台灣產品的基礎：</p>
   <div class="tw">
   <table>
     <caption>表 3.2 ｜日本主要高齡居住／照護機構分類與費用（厚生勞動省、LIFULL 介護資料）</caption>
-    <thead><tr><th>機構類型</th><th>性質</th><th class="num">入居一時金</th><th class="num">月額費用相場</th><th>對象</th></tr></thead>
+    <thead><tr><th>機構類型</th><th>性質</th><th class="num">入住一次金</th><th class="num">月費行情</th><th>對象</th></tr></thead>
     <tbody>
-      <tr><th>特別養護老人ホーム（特養）</th><td>介護保險公費施設</td><td class="num">無</td><td class="num">約 10–15 萬日圓</td><td>要介護 3 以上，低價但候補眾多</td></tr>
-      <tr><th>介護老人保健施設（老健）</th><td>介護保險公費施設</td><td class="num">無</td><td class="num">約 10–15 萬日圓</td><td>復健、過渡性照護</td></tr>
-      <tr><th>サ高住（服務型高齡者住宅）</th><td>賃貸契約（敷金）</td><td class="num">原則不要（敷金）</td><td class="num">約 11–15 萬日圓</td><td>可自理長者，安否確認＋生活諮詢</td></tr>
-      <tr><th>住宅型有料老人ホーム</th><td>自費，外接介護</td><td class="num">數十萬–數千萬</td><td class="num">約 20 萬日圓</td><td>自費，搭配外部居家服務</td></tr>
-      <tr><th>介護付有料老人ホーム</th><td>自費，特定施設（內含照護）</td><td class="num">數十萬–數千萬</td><td class="num">約 20 萬日圓以上</td><td>含照護人力，看護到臨終</td></tr>
+      <tr><th>特別養護老人院（特養）</th><td>介護保險公費機構</td><td class="num">無</td><td class="num">約 10–15 萬日圓<small>≈2.2–3.3 萬台幣</small></td><td>需照護 3 級以上，低價但候補眾多</td></tr>
+      <tr><th>介護老人保健機構（老健）</th><td>介護保險公費機構</td><td class="num">無</td><td class="num">約 10–15 萬日圓<small>≈2.2–3.3 萬台幣</small></td><td>復健、過渡性照護</td></tr>
+      <tr><th>服務型高齡者住宅</th><td>租賃契約（押金）</td><td class="num">原則免收（押金）</td><td class="num">約 11–15 萬日圓<small>≈2.4–3.3 萬台幣</small></td><td>可自理長者，安全確認＋生活諮詢</td></tr>
+      <tr><th>住宅型收費老人院</th><td>自費，外接照護</td><td class="num">數十萬–數千萬日圓</td><td class="num">約 20 萬日圓<small>≈4.4 萬台幣</small></td><td>自費，搭配外部居家服務</td></tr>
+      <tr><th>附照護收費老人院</th><td>自費，特定機構（內含照護）</td><td class="num">數十萬–數千萬日圓</td><td class="num">約 20 萬日圓以上<small>≈4.4 萬台幣以上</small></td><td>含照護人力，照顧到臨終</td></tr>
     </tbody>
   </table>
   </div>
-  <p>市場最鮮明的趨勢是<strong>「二極化」</strong>：LIFULL 介護指出，市場同時往「高價格」（入居一時金 1,000 萬日圓以上的高級老人住宅）與「低價格」（入居一時金 500 萬日圓以下、月額 20 萬以下）兩端集中。這個二極化現象，與台灣現況（天價養生村 vs 平價護理之家）如出一轍，也再次印證了中端市場的機會。</p>
+  <p>市場最鮮明的趨勢是<strong>「二極化」</strong>：LIFULL 介護指出，市場同時往「高價格」（入住一次金 1,000 萬日圓／約 220 萬新台幣以上的高級老人住宅）與「低價格」（入住一次金 500 萬日圓／約 110 萬新台幣以下、月費 20 萬日圓以下）兩端集中。這個二極化現象，與台灣現況（天價養生村 vs 平價護理之家）如出一轍，也再次印證了中端市場的機會。</p>
 
-  <h3>四、高端市場案例：三井不動產「Park Wellstate（パークウェルステイト）」</h3>
+  <h3>四、高端市場案例：三井不動產「Park Wellstate」</h3>
   <p>日本高端銀髮住宅的標竿，是不動產巨頭<strong>三井不動產</strong>於 2017 年成立「三井不動產 Residential Wellness」切入的旗艦品牌 <strong>Park Wellstate</strong>。其商業模式極具參考價值：由三井不動產 Residential 開發建物、Residential Wellness 負責營運，把「不動產開發力 × 飯店服務力 × 醫療照護力」三者整合〔來源：三井不動產官網、三井不動產 Residential Wellness 官網〕。</p>
   <h4>服務內容與客群</h4>
   <ul class="bul">
-    <li><strong>客群</strong>：入居時年齡概約 60 歲以上的「健康活躍長者」（プレミアエイジ），主打「現在還健康，但要為未來預作安排」的高資產族群。</li>
-    <li><strong>服務</strong>：飯店等級的居室與公共空間（餐廳、大浴場、健身房、劇院廳）、禮賓服務（Concierge）、健康諮詢、產學合作的健康壽命延伸計畫，並提供「同棟內」由健康住到需照護、直到臨終照顧（看取り）的全週期連續照護（CCRC 模式）。</li>
+    <li><strong>客群</strong>：入住時年齡概約 60 歲以上的「健康活躍長者」（premier age），主打「現在還健康，但要為未來預作安排」的高資產族群。</li>
+    <li><strong>服務</strong>：飯店等級的居室與公共空間（餐廳、大浴場、健身房、劇院廳）、禮賓服務（Concierge）、健康諮詢、產學合作的健康壽命延伸計畫，並提供「同棟內」由健康住到需照護、直到臨終照顧的全週期連續照護（CCRC 模式）。</li>
     <li><strong>據點</strong>：採「都心 × 度假」雙軸，包括浜田山、西麻布（都心首座）、千里中央、湘南藤沢 SST、幕張、鴨川（海濱度假）等共 6 座旗艦。</li>
   </ul>
   <h4>收費模式（旗艦案數字）</h4>
-  <p>採「入居一時金（賃料前付）＋月額利用料」雙軌，並提供前付／月付選擇。其旗艦案的數字足以說明日本高端市場的天花板：<strong>2024 年開業的「Park Wellstate 西麻布」，最高端居室入居一時金超過 5 億日圓</strong>（約新台幣 1.1 億元），二人入居追加一時金即達 2,400 萬日圓；食事基本料每人每月 35,200 日圓〔來源：LIFULL 介護、三井不動產 Residential Wellness 官網〕。</p>
+  <p>採「入住一次金（租金預付）＋月費」雙軌，並提供前付／月付選擇。其旗艦案的數字足以說明日本高端市場的天花板：<strong>2024 年開業的「Park Wellstate 西麻布」，最高端居室入住一次金超過 5 億日圓</strong>（約新台幣 1.1 億元），二人入住追加一次金即達 2,400 萬日圓（約 530 萬新台幣）；餐費基本料每人每月 35,200 日圓（約 7,700 新台幣）〔來源：LIFULL 介護、三井不動產 Residential Wellness 官網〕。</p>
   <div class="note brass">
     <span class="tag">高端案例啟示</span>
-    Park Wellstate 證明了三件事：<strong>（1）品牌與不動產信任感可支撐極高溢價</strong>——三井的品牌讓客戶願意付出上億日圓；<strong>（2）「全週期連續照護（CCRC）」是高端產品的核心賣點</strong>——住戶要的不是房子，而是「在這裡住到最後、不必再搬家」的承諾；<strong>（3）健康活躍長者（60+ 可自理）才是高端市場的進場客群</strong>，而非已失能者。台灣高端產品應直接對標此模式。
+    Park Wellstate 證明了三件事：<strong>（1）品牌與不動產信任感可支撐極高溢價</strong>——三井的品牌讓客戶願意付出上億日圓（數千萬新台幣）；<strong>（2）「全週期連續照護（CCRC）」是高端產品的核心賣點</strong>——住戶要的不是房子，而是「在這裡住到最後、不必再搬家」的承諾；<strong>（3）健康活躍長者（60+ 可自理）才是高端市場的進場客群</strong>，而非已失能者。台灣高端產品應直接對標此模式。
   </div>
 
-  <h4>對照案例：ベネッセ「アリア」——「有照護的高端」</h4>
-  <p>若說 Park Wellstate 是「不動產商主導、收健康長者」的高端模式，那麼 ベネッセ「アリア」系列則代表另一條路線：「<strong>照護營運商主導、即使失能也能高端地、有尊嚴地活著</strong>」。アリア 是 ベネッセ 旗下六大品牌系列（アリア／グランダ／グラニー／くらら／まどか／ここち）中的<strong>最高價位系列</strong>，自 2003 年於東京杉並區創設，是日本最早採用 24 小時看護體制的高端機構之一〔來源：ベネッセスタイルケア 官網〕。其關鍵設計對台灣極具啟發：</p>
+  <h4>對照案例：Benesse（倍樂生）「Aria」——「有照護的高端」</h4>
+  <p>若說 Park Wellstate 是「不動產商主導、收健康長者」的高端模式，那麼 Benesse「Aria」系列則代表另一條路線：「<strong>照護營運商主導、即使失能也能高端地、有尊嚴地活著</strong>」。Aria 是 Benesse 旗下六大品牌系列（Aria／Granda／Granny／Kurara／Madoka／Kokochi）中的<strong>最高價位系列</strong>，自 2003 年於東京杉並區創設，是日本最早採用 24 小時護理體制的高端機構之一〔來源：Benesse Style Care 官網〕。其關鍵設計對台灣極具啟發：</p>
   <ul class="bul">
-    <li><strong>都心精華選址</strong>：アリア 集中於六本木、高輪、惠比壽、一番町等東京最高端住宅區，強調歷史文化價值與生活機能，把「地段」本身做成產品溢價。</li>
-    <li><strong>彈性收費（值得台灣借鏡）</strong>：提供「入居金型」與「月額型」雙軌——入居金型以前付金降低月費，月額型則「無入居金、僅收 500 萬日圓敷金（可全額退還）」。這種<strong>「無大筆前付金、改收可退保證金」的彈性，正是台灣消費者最能接受的模式</strong>。</li>
-    <li><strong>償却（攤提）機制透明</strong>：入居金採「簽約時攤提 3 成、其餘 7 成於 5 年（60 個月）均等攤提」，5 年內退居按比例退還——這套透明的退費機制，化解了消費者對「押金有去無回」的疑慮，是建立信任的關鍵設計。</li>
-    <li><strong>人才品牌化</strong>：ベネッセ 以嚴格的社內專業資格制度認證頂尖照護人才（內部暱稱「マジ神」），把「人」做成品牌資產——這對人力是命脈的養老業，是極高明的留才與差異化策略。</li>
+    <li><strong>都心精華選址</strong>：Aria 集中於六本木、高輪、惠比壽、一番町等東京最高端住宅區，強調歷史文化價值與生活機能，把「地段」本身做成產品溢價。</li>
+    <li><strong>彈性收費（值得台灣借鏡）</strong>：提供「入住金型」與「月費型」雙軌——入住金型以前付金降低月費，月費型則「無入住金、僅收 500 萬日圓（約 110 萬新台幣）押金（可全額退還）」。這種<strong>「無大筆前付金、改收可退保證金」的彈性，正是台灣消費者最能接受的模式</strong>。</li>
+    <li><strong>攤提機制透明</strong>：入住金採「簽約時攤提 3 成、其餘 7 成於 5 年（60 個月）均等攤提」，5 年內退住按比例退還——這套透明的退費機制，化解了消費者對「押金有去無回」的疑慮，是建立信任的關鍵設計。</li>
+    <li><strong>人才品牌化</strong>：Benesse 以嚴格的內部專業資格制度認證頂尖照護人才（內部暱稱「照護之神」），把「人」做成品牌資產——這對人力是命脈的養老業，是極高明的留才與差異化策略。</li>
   </ul>
 
   <h3>四之二、日本的醫療整合底盤：地域包括照護體系</h3>
-  <p>日本養老產業能順暢運作，還仰賴一套關鍵的「<strong>地域包括ケアシステム（地域整合照護體系）</strong>」。其核心理念是：在「約 30 分鐘內可獲得必要服務的日常生活圈（約中學學區）」內，整合醫療（家庭醫師、連攜醫院、藥局、牙科）、介護（居家、機構、社區密著型服務）、預防、住宅與生活支援五大要素，並以「地域包括支援中心」作為樞紐〔來源：厚生勞動省〕。</p>
+  <p>日本養老產業能順暢運作，還仰賴一套關鍵的「<strong>地域整合照護體系（地域包括照護）</strong>」。其核心理念是：在「約 30 分鐘內可獲得必要服務的日常生活圈（約中學學區）」內，整合醫療（家庭醫師、連攜醫院、藥局、牙科）、介護（居家、機構、社區密著型服務）、預防、住宅與生活支援五大要素，並以「地域包括支援中心」作為樞紐〔來源：厚生勞動省〕。</p>
   <p>這套體系的啟示是：<strong>養老機構不是孤島，而是醫療生活圈的一個節點</strong>。台灣雖醫療資源充沛，但住宿照護與醫療體系的整合度遠不及日本——這既是缺口，也正是台灣業者透過「醫養結合」差異化的最大切入點（呼應第四章與第七章）。</p>
 
   <h3>五、中端市場案例：上市照護企業的規模化獲利模式</h3>
-  <p>日本中端市場由一批上市／大型企業以「規模化、標準化、多品牌」方式經營，其財報是極佳的獲利模式參照〔來源：各社財報、事業構想、月刊シニアビジネス〕：</p>
+  <p>日本中端市場由一批上市／大型企業以「規模化、標準化、多品牌」方式經營，其財報是極佳的獲利模式參照〔來源：各社財報、事業構想、《月刊銀髮產業》〕：</p>
   <div class="tw">
   <table>
     <caption>表 3.3 ｜日本主要照護營運商規模與獲利（公開資料整理）</caption>
     <thead><tr><th>企業</th><th>規模／地位</th><th class="num">營收／利潤率</th><th>模式特徵</th></tr></thead>
     <tbody>
-      <tr><th>ベネッセスタイルケア</th><td>有料老人住宅業界第 1，市占 5–10%</td><td class="num">營收約 1,273 億日圓；營益率 7.9%</td><td>多品牌分層（アリア高級／グランダ／ここち），教育集團跨業</td></tr>
-      <tr><th>SOMPO ケア</th><td>銀髮住宅居室數國內第 1，約 27,000 室</td><td class="num">營益率 5.1%</td><td>保險集團主導，購併成長（ワタミ介護）＋ AI 看護 ICT</td></tr>
-      <tr><th>ニチイ學館</th><td>綜合照護業界最大手</td><td class="num">介護事業營益率 9.8%</td><td>照護＋教育＋醫療事務多角化；2023 年由日本生命收購</td></tr>
-      <tr><th>學研ココファン</th><td>サ高住大型連鎖</td><td class="num">大規模展開</td><td>規模化 サ高住，並跨入葬儀等周邊事業</td></tr>
+      <tr><th>Benesse Style Care（倍樂生）</th><td>收費銀髮住宅業界第 1，市占 5–10%</td><td class="num">營收約 1,273 億日圓<small>≈280 億台幣</small>；營益率 7.9%</td><td>多品牌分層（Aria 高級／Granda／Kokochi），教育集團跨業</td></tr>
+      <tr><th>SOMPO Care</th><td>銀髮住宅居室數國內第 1，約 27,000 室</td><td class="num">營益率 5.1%</td><td>保險集團主導，併購成長（和民介護）＋ AI 照護 ICT</td></tr>
+      <tr><th>日醫學館（Nichii）</th><td>綜合照護業界最大</td><td class="num">照護事業營益率 9.8%</td><td>照護＋教育＋醫療事務多角化；2023 年由日本生命收購</td></tr>
+      <tr><th>學研 Cocofump</th><td>服務型高齡住宅大型連鎖</td><td class="num">大規模展開</td><td>規模化服務型高齡住宅，並跨入殯葬等周邊事業</td></tr>
     </tbody>
   </table>
   </div>
@@ -992,23 +993,23 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
 
   <div class="note">
     <span class="tag">資本進場訊號</span>
-    最值得台灣注意的一筆交易：<strong>2023 年 12 月，日本最大壽險「日本生命」以約 2,100 億日圓收購照護龍頭ニチイ學館</strong>，宣告生保巨頭正式大舉切入照護本業。這與台灣壽險業（國泰、富邦、新光）正積極布局銀髮住宅的趨勢完全一致——<strong>「保險 × 照護 × 不動產」的整合，是這個產業在成熟市場的最終型態。</strong>
+    最值得台灣注意的一筆交易：<strong>2023 年 12 月，日本最大壽險「日本生命」以約 2,100 億日圓（約 460 億新台幣）收購照護龍頭日醫學館</strong>，宣告壽險巨頭正式大舉切入照護本業。這與台灣壽險業（國泰、富邦、新光）正積極布局銀髮住宅的趨勢完全一致——<strong>「保險 × 照護 × 不動產」的整合，是這個產業在成熟市場的最終型態。</strong>
   </div>
 
   <h3>六、平價市場案例：規模化連鎖、成本控制與人力管理</h3>
-  <p>日本平價市場以「特養（公費）」與「低價有料老人住宅／サ高住連鎖」為主，其經營關鍵全在於<strong>成本控制與人力管理</strong>，而這正是日本目前最嚴峻、也最值得台灣預先警惕的課題。</p>
+  <p>日本平價市場以「特養（公費）」與「低價收費銀髮住宅／服務型高齡住宅連鎖」為主，其經營關鍵全在於<strong>成本控制與人力管理</strong>，而這正是日本目前最嚴峻、也最值得台灣預先警惕的課題。</p>
   <h4>人力危機：日本的前車之鑑</h4>
-  <p>根據厚生勞動省第 9 期介護保險事業計畫推估，日本介護職員需求為：<strong>2026 年度約 240 萬人、2040 年度約 272 萬人</strong>（相對 2022 年度的 215 萬人，需增加約 57 萬人，年均增 3.2 萬人）。而第 8 期更早的推估指出，2040 年相對 2019 年存在約 <strong>69 萬人的人力缺口</strong>。更嚴峻的是，照護職近年首度出現「離職超過」（離職人數多於入職）〔來源：厚生勞動省、介護ニュース Joint〕。</p>
+  <p>根據厚生勞動省第 9 期介護保險事業計畫推估，日本照護職員需求為：<strong>2026 年度約 240 萬人、2040 年度約 272 萬人</strong>（相對 2022 年度的 215 萬人，需增加約 57 萬人，年均增 3.2 萬人）。而第 8 期更早的推估指出，2040 年相對 2019 年存在約 <strong>69 萬人的人力缺口</strong>。更嚴峻的是，照護職近年首度出現「離職超過」（離職人數多於入職）〔來源：日本厚生勞動省、介護新聞 Joint〕。</p>
 
   <figure class="chart">
-    <figcaption>圖 3.2 ｜日本介護職員需求推估（萬人，厚生勞動省）</figcaption>
+    <figcaption>圖 3.2 ｜日本照護職員需求推估（萬人，厚生勞動省）</figcaption>
     <div class="chart-box"><canvas id="chart_jp_workforce"></canvas></div>
   </figure>
 
   <p>面對人力危機，日本平價／連鎖業者的因應策略，正是台灣必須提前部署的：</p>
   <ol class="num">
-    <li><strong>外國人力制度化</strong>：日本於 2017 年創設在留資格「介護」，並透過技能實習、特定技能制度大量引進外籍照護人力。SOMPO ケア甚至反向投資印度人才仲介，自建跨國照護人才供應鏈。</li>
-    <li><strong>生產性向上（ICT／照護機器人）</strong>：以 AI 看護感測、照護紀錄電子化、移位輔具等科技，在人力母數縮減下維持服務量能——這是日本政府明訂的五大對策之一。</li>
+    <li><strong>外國人力制度化</strong>：日本於 2017 年創設在留資格「介護」，並透過技能實習、特定技能制度大量引進外籍照護人力。SOMPO Care 甚至反向投資印度人才仲介，自建跨國照護人才供應鏈。</li>
+    <li><strong>生產性向上（ICT／照護機器人）</strong>：以 AI 照護感測、照護紀錄電子化、移位輔具等科技，在人力母數縮減下維持服務量能——這是日本政府明訂的五大對策之一。</li>
     <li><strong>處遇改善（加薪留才）</strong>：2024 年度介護報酬改定後，照護職平均薪資上升約 4.6%，以降低離職率。</li>
     <li><strong>標準化與集中化</strong>：透過中央廚房、集中採購、標準作業流程，壓低單位營運成本，使平價模式得以維持微利運轉。</li>
   </ol>
@@ -1018,22 +1019,22 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
     日本用 20 年驗證了三條鐵律：<strong>（1）制度決定產業天花板</strong>——介護保險的社會保險底盤，是日本養老產業規模化的根本，台灣須留意自身稅收制長照的支付侷限；<strong>（2）高端靠「不動產品牌＋全週期照護」，中端靠「規模化＋多品牌」，平價靠「成本與人力管理」</strong>，三種市場是三種完全不同的生意；<strong>（3）人力，而非需求，才是這個產業真正的瓶頸</strong>。台灣若不從第一天就把「外籍人力、科技導入、留才機制」寫進商業模式，必將重蹈日本人力崩潰的覆轍。
   </div>
 
-  <h3>七、日本主要参照施設 — 公式サイト &amp; QRコード</h3>
-  <p class="ref-intro">本章の記述根拠となった日本代表施設・企業の公式サイトです。QRコードをスキャンするか、リンクをクリックすると最新情報・費用・空室状況等をご確認いただけます。</p>
+  <h3>七、日本主要參照機構 — 官方網站與 QR Code</h3>
+  <p class="ref-intro">以下為本章引用之日本代表性照護機構與企業的官方網站。掃描 QR Code 或點擊連結，即可查閱各機構的最新資訊、收費與空房狀況（多為日文網站，括號內為中文對照）。</p>
 
   <div class="ref-grid">
 
     <div class="ref-card">
       <div class="ref-body">
-        <div class="ref-badge hi">高端 · CCRC</div>
-        <div class="ref-name">パークウェルステイト</div>
-        <div class="ref-op">三井不動産レジデンシャルウェルネス</div>
-        <p class="ref-desc">西麻布旗艦の入居一時金最高5億円超。三井不動産ブランド×医療連携×ホスピタリティを一体化したCCRC型シニア住宅の日本最高峰。本報告の「高端市場標竿」として引用。</p>
+        <div class="ref-badge hi">高端 · 全週期照護</div>
+        <div class="ref-name">Park Wellstate</div>
+        <div class="ref-op">三井不動產 Residential Wellness</div>
+        <p class="ref-desc">西麻布旗艦案入住一次金最高逾 5 億日圓（約 1.1 億新台幣）。整合三井不動產品牌、醫療連攜與飯店式服務的全週期（CCRC）銀髮住宅，日本高端標竿。本報告高端市場主要參照。</p>
       </div>
       <div class="ref-foot">
         <img class="ref-qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fwww.mfrw.co.jp%2Fparkwellstate%2F&size=160x160&color=1d1d1f&bgcolor=ffffff&qzone=1" alt="QR Code" loading="lazy">
         <div class="ref-url-wrap">
-          <span class="ref-url-label">Official Site</span>
+          <span class="ref-url-label">官方網站</span>
           <a class="ref-url" href="https://www.mfrw.co.jp/parkwellstate/" target="_blank" rel="noopener">mfrw.co.jp/<wbr>parkwellstate/</a>
         </div>
       </div>
@@ -1041,15 +1042,15 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
 
     <div class="ref-card">
       <div class="ref-body">
-        <div class="ref-badge hi">高端 · 介護付</div>
-        <div class="ref-name">アリア（Aria）</div>
-        <div class="ref-op">ベネッセスタイルケア</div>
-        <p class="ref-desc">業界第1位・ベネッセグループの旗艦ブランド。24時間看護師常駐で「介護が必要になっても、誇り高く生きる」を掲げる。本報告の「ブランド戦略・差異化」の引用元。</p>
+        <div class="ref-badge hi">高端 · 附照護</div>
+        <div class="ref-name">Aria（雅麗亞）</div>
+        <div class="ref-op">Benesse Style Care 倍樂生</div>
+        <p class="ref-desc">業界第一、Benesse 集團旗艦品牌。24 小時護理師常駐，標榜「即使需要照護，仍能有尊嚴地生活」。本報告品牌策略與差異化的主要參照。</p>
       </div>
       <div class="ref-foot">
         <img class="ref-qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fkaigo.benesse-style-care.co.jp%2Fseries_aria&size=160x160&color=1d1d1f&bgcolor=ffffff&qzone=1" alt="QR Code" loading="lazy">
         <div class="ref-url-wrap">
-          <span class="ref-url-label">Official Site</span>
+          <span class="ref-url-label">官方網站</span>
           <a class="ref-url" href="https://kaigo.benesse-style-care.co.jp/series_aria" target="_blank" rel="noopener">kaigo.benesse-style-care<wbr>.co.jp/series_aria</a>
         </div>
       </div>
@@ -1058,14 +1059,14 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
     <div class="ref-card">
       <div class="ref-body">
         <div class="ref-badge mid">中端 · 業界最大</div>
-        <div class="ref-name">SOMPOケア</div>
-        <div class="ref-op">SOMPOホールディングス</div>
-        <p class="ref-desc">居室数約27,000室・国内第1位の保険系大手。ワタミ介護買収や印度での人材調達、AIケア記録など成長戦略が先進的。本報告の「中端規模化モデル」として引用。</p>
+        <div class="ref-name">SOMPO Care</div>
+        <div class="ref-op">SOMPO 控股集團</div>
+        <p class="ref-desc">居室數約 27,000 室、日本第一的保險系大型業者。透過併購、海外人才招募與 AI 照護紀錄等成長策略領先業界。本報告中端規模化模式的主要參照。</p>
       </div>
       <div class="ref-foot">
         <img class="ref-qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fwww.sompocare.com%2F&size=160x160&color=1d1d1f&bgcolor=ffffff&qzone=1" alt="QR Code" loading="lazy">
         <div class="ref-url-wrap">
-          <span class="ref-url-label">Official Site</span>
+          <span class="ref-url-label">官方網站</span>
           <a class="ref-url" href="https://www.sompocare.com/" target="_blank" rel="noopener">sompocare.com</a>
         </div>
       </div>
@@ -1073,15 +1074,15 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
 
     <div class="ref-card">
       <div class="ref-body">
-        <div class="ref-badge mid">中端 · 総合大手</div>
-        <div class="ref-name">ニチイホーム</div>
-        <div class="ref-op">ニチイケアパレス（日本生命グループ）</div>
-        <p class="ref-desc">2023年に日本生命が2,100億円で買収した総合介護大手ニチイ學館のシニア住宅ブランド。「保険×照護×不動産」統合の体現として本報告で引用。</p>
+        <div class="ref-badge mid">中端 · 綜合大型</div>
+        <div class="ref-name">Nichii Home 日醫之家</div>
+        <div class="ref-op">日醫學館（2023 年由日本生命收購）</div>
+        <p class="ref-desc">2023 年由日本生命以 2,100 億日圓（約 460 億新台幣）收購的綜合照護大廠日醫學館旗下銀髮住宅品牌，是「保險 × 照護 × 不動產」整合的體現。本報告壽險跨業案例參照。</p>
       </div>
       <div class="ref-foot">
         <img class="ref-qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fwww.nichii-carepalace.co.jp%2F&size=160x160&color=1d1d1f&bgcolor=ffffff&qzone=1" alt="QR Code" loading="lazy">
         <div class="ref-url-wrap">
-          <span class="ref-url-label">Official Site</span>
+          <span class="ref-url-label">官方網站</span>
           <a class="ref-url" href="https://www.nichii-carepalace.co.jp/" target="_blank" rel="noopener">nichii-carepalace.co.jp</a>
         </div>
       </div>
@@ -1089,15 +1090,15 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
 
     <div class="ref-card">
       <div class="ref-body">
-        <div class="ref-badge low">平価 · サ高住チェーン</div>
-        <div class="ref-name">学研ここファン</div>
-        <div class="ref-op">株式会社学研ここファン</div>
-        <p class="ref-desc">全国展開のサービス付き高齢者向け住宅チェーン。月額15万円台〜の価格帯で「中産階級が手の届く選択肢」を実現。本報告の「平価連鎖モデル・台灣中端参照」として引用。</p>
+        <div class="ref-badge low">平價 · 連鎖</div>
+        <div class="ref-name">Gakken Cocofump</div>
+        <div class="ref-op">學研 Cocofump（學研集團）</div>
+        <p class="ref-desc">全國展開的服務型高齡者住宅連鎖。月費 15 萬日圓（約 3.3 萬新台幣）起，實現「中產階級負擔得起的選擇」。本報告平價連鎖模式的主要參照。</p>
       </div>
       <div class="ref-foot">
         <img class="ref-qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fwww.cocofump.co.jp%2F&size=160x160&color=1d1d1f&bgcolor=ffffff&qzone=1" alt="QR Code" loading="lazy">
         <div class="ref-url-wrap">
-          <span class="ref-url-label">Official Site</span>
+          <span class="ref-url-label">官方網站</span>
           <a class="ref-url" href="https://www.cocofump.co.jp/" target="_blank" rel="noopener">cocofump.co.jp</a>
         </div>
       </div>
@@ -1137,11 +1138,11 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
   <h3>二、四大關鍵差異的深度剖析</h3>
   <p>上表的八個構面中，有四個差異足以決定商業模式的成敗，值得深入剖析：</p>
   <h4>差異一：財源——社會保險 vs 稅收，決定產業天花板</h4>
-  <p>日本介護保險是 40 歲以上全民強制納保的社會保險，照護費用由保險給付 7–9 成，創造了 11.9 兆日圓、可預期的產業現金流。台灣長照 2.0 則以菸捐、遺贈稅與公務預算等稅收支應，財源較不穩定且給付集中於居家社區。這意味著：<strong>台灣業者不能複製日本「靠保險給付養活機構」的模式，必須把獲利建立在自費購買力上。</strong>所幸第一章已證明，台灣嬰兒潮世代有房、有錢、有意願，自費市場的支付能力足夠支撐中高端產品。</p>
+  <p>日本介護保險是 40 歲以上全民強制納保的社會保險，照護費用由保險給付 7–9 成，創造了 11.9 兆日圓（約 2.6 兆新台幣）、可預期的產業現金流。台灣長照 2.0 則以菸捐、遺贈稅與公務預算等稅收支應，財源較不穩定且給付集中於居家社區。這意味著：<strong>台灣業者不能複製日本「靠保險給付養活機構」的模式，必須把獲利建立在自費購買力上。</strong>所幸第一章已證明，台灣嬰兒潮世代有房、有錢、有意願，自費市場的支付能力足夠支撐中高端產品。</p>
   <h4>差異二：人力——台灣現有成本優勢，但正快速消失</h4>
   <p>日本照護人力已嚴重短缺（2040 年缺口 57–69 萬人），薪資高昂；台灣現階段照服與護理人力成本相對較低，且可運用外籍看護資源，具備成本優勢。<strong>但這個優勢是「正在融化的冰塊」</strong>：台灣 2028 年人口紅利結束、勞動人口萎縮，照服人力成本將沿著日本的軌跡快速上升。業者若不在此刻趁人力成本仍低時，提前建立訓練體系、外籍人力管道與科技照護基礎，幾年後將面臨與日本相同的人力崩潰。</p>
   <h4>差異三：土地——選址結構決定產品定位</h4>
-  <p>日本都心地價極高（西麻布旗艦才能撐起 5 億日圓入居金），地方則相對平價。台灣六都都會精華區地價同樣高昂，但次核心、衛星市鎮與中南部仍有合理的土地空間。<strong>這直接決定了產品策略：高端必須在都會精華（高地價、高溢價），中端則應落在「次核心」（地價合理、人口稠密、醫療近便），平價可往中南部尋求成本優勢。</strong>選址不是地段問題，而是商業模式問題。</p>
+  <p>日本都心地價極高（西麻布旗艦才能撐起 5 億日圓／約 1.1 億新台幣的入住金），地方則相對平價。台灣六都都會精華區地價同樣高昂，但次核心、衛星市鎮與中南部仍有合理的土地空間。<strong>這直接決定了產品策略：高端必須在都會精華（高地價、高溢價），中端則應落在「次核心」（地價合理、人口稠密、醫療近便），平價可往中南部尋求成本優勢。</strong>選址不是地段問題，而是商業模式問題。</p>
   <h4>差異四：醫療整合——台灣的最大差異化機會</h4>
   <p>日本以「地域包括照護體系」把醫療與照護無縫整合，這是其產業順暢運作的底盤。台灣醫療資源（尤其醫學中心密度）其實世界一流，但與住宿照護的整合度遠遠不足——住戶失能或急病時，往往缺乏順暢的醫療銜接。<strong>這個「整合缺口」反而是台灣新進業者最大的差異化武器</strong>：透過自營護理之家、與醫院簽訂綠色通道、導入駐點醫護與遠距醫療，業者可打造現有純住宅型養生村無法提供的「醫養結合安心感」。</p>
 
@@ -1149,13 +1150,13 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
   <ol class="num">
     <li><strong>CCRC 全週期連續照護（Park Wellstate 模式）</strong>：「在同一園區，從健康活躍住到需要照護、直至臨終，無須再搬家」的承諾，精準命中嬰兒潮世代最深的焦慮。此模式與制度無關，純粹是服務設計，可直接導入高端產品。</li>
     <li><strong>多品牌分層營運平台（Benesse / SOMPO 模式）</strong>：以同一營運後台、不同品牌覆蓋高中平價客群，最大化資源綜效。台灣連鎖化擴張時可直接套用。</li>
-    <li><strong>ICT／照護科技導入（生產性向上）</strong>：AI 看護感測、電子照護紀錄、移位輔具，在台人力成本上升前提早布建，是穩定品質與壓低長期人事成本的核心。</li>
+    <li><strong>ICT／照護科技導入（生產性向上）</strong>：AI 照護感測、電子照護紀錄、移位輔具，在台人力成本上升前提早布建，是穩定品質與壓低長期人事成本的核心。</li>
     <li><strong>飯店式服務 × 健康促進（產學合作）</strong>：禮賓、餐飲、健身、課程與健康壽命延伸計畫，是中高端產品的標準配備，可直接移植。</li>
   </ol>
 
   <h3>四、需要調整後才能導入的模式</h3>
   <ol class="num">
-    <li><strong>入居一時金制度</strong>：日本動輒數千萬至數億日圓的「終身利用權」前付金模式，在台灣消費者接受度與信任度均不足（擔心業者倒閉、押金拿不回）。<strong>需調整為「保證金＋月費」或「只租不售」的輕資產模式</strong>（如台灣樂陶居、合勤的做法），降低消費者進入門檻與心理障礙。</li>
+    <li><strong>入住一次金制度</strong>：日本動輒數千萬至數億日圓（數百萬至上億新台幣）的「終身利用權」前付金模式，在台灣消費者接受度與信任度均不足（擔心業者倒閉、押金拿不回）。<strong>需調整為「保證金＋月費」或「只租不售」的輕資產模式</strong>（如台灣樂陶居、合勤的做法），降低消費者進入門檻與心理障礙。</li>
     <li><strong>外籍照護人力制度</strong>：日本以「在留資格介護＋技能實習＋特定技能」建立合法外籍照護體系。台灣現以「外籍家庭看護移工」為主，機構聘用外籍照服員的法規與訓練體系尚不完整，<strong>須在現行移工與照服員制度框架下重新設計人力結構</strong>。</li>
     <li><strong>介護保險給付依賴</strong>：日本商業模式高度依賴保險給付現金流，台灣不可照搬。<strong>須將財務模型建立在「自費為主、補助為輔」的基礎上</strong>。</li>
   </ol>
@@ -1164,12 +1165,12 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
   <ul class="bul">
     <li><strong>超大規模郊區退休村（單體數百至上千戶）</strong>：日本部分 CCRC 位於地方、依賴成熟保險給付與在地醫療網支撐。台灣郊區醫療整合度不足、消費者偏好都會近便性，超大規模單體去化風險高，<strong>宜以中等規模、貼近都會的據點為主</strong>。</li>
     <li><strong>純公費特養模式</strong>：日本特養由介護保險公費支撐，台灣無對應財源，純公費低價機構難以民間商業化獲利，<strong>不應作為民間資本的主力產品</strong>。</li>
-    <li><strong>極端高端（入居金上億）的西麻布模式</strong>：台灣高資產人口基數與都心地價結構與東京不同，5 億日圓級產品市場過薄，<strong>台灣高端的合理天花板應對標「潤福升級版」而非「西麻布」。</strong></li>
+    <li><strong>極端高端（入住金上億）的西麻布模式</strong>：台灣高資產人口基數與都心地價結構與東京不同，5 億日圓（約 1.1 億新台幣）級產品市場過薄，<strong>台灣高端的合理天花板應對標「潤福升級版」而非「西麻布」。</strong></li>
   </ul>
 
   <div class="note">
     <span class="tag">第四章結論</span>
-    台灣的最佳策略是「<strong>抓住服務設計、放掉制度依賴</strong>」：可全力導入日本在「CCRC 全週期照護、飯店式服務、科技導入、多品牌營運」上的服務 Know-how；但必須把「入居一時金、保險給付、超大規模郊區村」這些<strong>建立在日本特定制度與市場結構上的模式</strong>，改造為適合台灣自費市場、輕資產、都會近便、醫養結合的本地版本。
+    台灣的最佳策略是「<strong>抓住服務設計、放掉制度依賴</strong>」：可全力導入日本在「CCRC 全週期照護、飯店式服務、科技導入、多品牌營運」上的服務 Know-how；但必須把「入住一次金、保險給付、超大規模郊區村」這些<strong>建立在日本特定制度與市場結構上的模式</strong>，改造為適合台灣自費市場、輕資產、都會近便、醫養結合的本地版本。
   </div>
 </section>
 
@@ -1246,7 +1247,7 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
   <h3>四、客群心理與差異化設計：贏在「軟體」而非「硬體」</h3>
   <p>三種模式的硬體（建築、房型、設備）容易被資本雄厚的對手複製，真正的護城河在於對<strong>客群深層心理需求</strong>的洞察與服務設計。本案的差異化應建立在四個被現有業者忽略的心理需求上：</p>
   <ul class="bul">
-    <li><strong>「尊嚴」勝過「照顧」</strong>：嬰兒潮世代最深的恐懼，不是失能本身，而是失能後「失去尊嚴、變成負擔」。產品語言應從「我們照顧你」轉向「你依然是自己生活的主人」——這正是 アリア「介護が必要になっても、誇り高く生きる（即使需要照護，仍能高傲地活著）」的品牌精神。空間設計上以日式留白、自然採光、隱私保護取代醫院式的冰冷走廊。</li>
+    <li><strong>「尊嚴」勝過「照顧」</strong>：嬰兒潮世代最深的恐懼，不是失能本身，而是失能後「失去尊嚴、變成負擔」。產品語言應從「我們照顧你」轉向「你依然是自己生活的主人」——這正是 Aria「即使需要照護，仍能有尊嚴地活著」的品牌精神。空間設計上以日式留白、自然採光、隱私保護取代醫院式的冰冷走廊。</li>
     <li><strong>「不必再搬家」的安全感</strong>：現有養生村「健康才收、失能轉出」是最大痛點。CCRC 連續照護承諾——「無論身體如何變化，你都能在這裡住到最後」——直接消解長者對「被趕走、再次顛沛」的焦慮，是極強的鎖客（lock-in）設計。</li>
     <li><strong>「社交歸屬」對抗孤獨</strong>：少子化下的獨居長者，最大的隱形殺手是孤獨。透過興趣社團、共餐文化、青銀共融（如合勤共生宅模式）打造「社群感」，是留住住戶、提升口碑的關鍵，也是純居家照顧無法提供的價值。</li>
     <li><strong>「對子女的交代」</strong>：付費決策者常是高所得子女。產品須同時讓子女「安心且有面子」——透過數位化的家屬 App（即時健康數據、活動照片、醫療通報）讓遠距子女參與，把「子女的愧疚感」轉化為「對機構的信任與推薦」。</li>
@@ -1297,7 +1298,7 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
       <tr><th>土地（長期租賃）</th><td class="num">租金計入 OPEX</td><td>輕資產：以 20–30 年長租取代購地，降低初期資本</td></tr>
       <tr><th>建築工程</th><td class="num">42,000</td><td>約 7,000 坪 × 6 萬／坪（無障礙、消防、醫療規格）</td></tr>
       <tr><th>室內裝修</th><td class="num">18,000</td><td>居室、公共空間、餐廳、復健室（含日式美學設計）</td></tr>
-      <tr><th>設備（醫療／照護／ICT）</th><td class="num">12,000</td><td>護理設備、移位輔具、AI 看護系統、廚房</td></tr>
+      <tr><th>設備（醫療／照護／ICT）</th><td class="num">12,000</td><td>護理設備、移位輔具、AI 照護系統、廚房</td></tr>
       <tr><th>開辦與證照</th><td class="num">3,000</td><td>立案、許可、初期人力培訓、品牌建立</td></tr>
       <tr><th>營運準備金</th><td class="num">5,000</td><td>開業初期入住爬坡期（約 18 個月）週轉</td></tr>
       <tr><th class="t-hi">建置總投資</th><td class="num t-hi">約 80,000（8 億）</td><td>若土地自有，另需 10–20 億購地</td></tr>
@@ -1509,7 +1510,7 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
   <h4>法規風險的縱深防護</h4>
   <p>台灣銀髮住宅橫跨老人福利法、長照服務法、住宅法、建築法、消防法乃至旅館業相關規範，不同機構類別的設置標準、樓地板面積、逃生動線、護理人力配比差異極大，且各縣市認定實務不一。因應之道有三層：<strong>（1）選擇法源最明確的類別立案</strong>（如住宿式長照機構或一般護理之家），避免遊走灰帶；<strong>（2）法務與建築專業前置</strong>——在選址與報照階段即聘請熟悉長照法規的專業團隊，把合規成本內建到財務模型；<strong>（3）保留政策緩衝</strong>——主動追蹤長照 3.0 立法方向（尤其住宿機構收費上限是否鬆綁、保險業投資長照是否進一步開放），讓商業模式具備因應政策變動的彈性。</p>
   <h4>人才風險的縱深因應</h4>
-  <p>照護人力是這門生意唯一無法外包、無法自動化取代的核心。因應須四管齊下並從第一天啟動：<strong>（1）自建訓練學院</strong>——把照服員培訓內化為品牌資產（仿 ベネッセ「マジ神」制度），以專業認證與職涯階梯留才；<strong>（2）建立外籍人力合法管道</strong>——在現行移工與照服員制度下，預先建立東南亞照護人力的招募、訓練與華語化體系；<strong>（3）科技替代</strong>——導入 AI 看護感測、電子照護紀錄、移位輔具，在人力母數縮減下維持服務量能；<strong>（4）處遇與文化</strong>——以高於同業的薪資、合理班表與尊重照護專業的組織文化降低離職率。台灣現階段人力成本仍低於日本，正是低成本建立這套體系的最佳時間窗口，錯過則成本將沿日本軌跡飆升。</p>
+  <p>照護人力是這門生意唯一無法外包、無法自動化取代的核心。因應須四管齊下並從第一天啟動：<strong>（1）自建訓練學院</strong>——把照服員培訓內化為品牌資產（仿 Benesse「照護之神」制度），以專業認證與職涯階梯留才；<strong>（2）建立外籍人力合法管道</strong>——在現行移工與照服員制度下，預先建立東南亞照護人力的招募、訓練與華語化體系；<strong>（3）科技替代</strong>——導入 AI 照護感測、電子照護紀錄、移位輔具，在人力母數縮減下維持服務量能；<strong>（4）處遇與文化</strong>——以高於同業的薪資、合理班表與尊重照護專業的組織文化降低離職率。台灣現階段人力成本仍低於日本，正是低成本建立這套體系的最佳時間窗口，錯過則成本將沿日本軌跡飆升。</p>
 </section>
 
 <!-- ===================== 第十章 ===================== -->
@@ -1521,13 +1522,13 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
   </div>
 
   <h3>問題一：台灣養老產業是否值得投資？</h3>
-  <p><strong>值得，且是少數兼具高確定性與高成長性的內需賽道。</strong>需求方向（65+ 占比單向升至 46.5%）、需求引爆點（2030–2045 年 80–85 歲失能放量）、支付能力（3.6 兆銀髮經濟、嬰兒潮有房有錢）三重確定性俱足，加上家庭照顧能量崩解強制需求外溢至付費機構。日本以 20 年驗證此產業可規模化獲利、並吸引日本生命等機構資本以 2,100 億日圓量級進場。台灣正處於日本 2005 年的位置，<strong>具備明確的時間紅利窗口</strong>。</p>
+  <p><strong>值得，且是少數兼具高確定性與高成長性的內需賽道。</strong>需求方向（65+ 占比單向升至 46.5%）、需求引爆點（2030–2045 年 80–85 歲失能放量）、支付能力（3.6 兆銀髮經濟、嬰兒潮有房有錢）三重確定性俱足，加上家庭照顧能量崩解強制需求外溢至付費機構。日本以 20 年驗證此產業可規模化獲利、並吸引日本生命等機構資本以 2,100 億日圓（約 460 億新台幣）量級進場。台灣正處於日本 2005 年的位置，<strong>具備明確的時間紅利窗口</strong>。</p>
 
   <h3>問題二：高端、中端、平價，哪個最值得切入？</h3>
   <p><strong>中端市場最值得作為核心切入點。</strong>理由有三：<strong>（1）市場最大</strong>——中產退休族是台灣最龐大的客群；<strong>（2）競爭最緩</strong>——高端被大集團佔據、平價是中小業者紅海，唯獨中端「體面又負擔得起」的級距結構性缺位（第七章啞鈴型缺口）；<strong>（3）回收最快</strong>——財務模型顯示中端一般情境回收期約 9–11 年，優於高端的 10–14 年。高端宜作為品牌制高點後期切入，平價宜作為承接下游照護的配套，而非主力。</p>
 
   <h3>問題三：最佳商業模式為何？</h3>
-  <p><strong>「以中端為核心、CCRC 連續照護為承諾、醫養結合為護城河、多品牌平台為擴張引擎」</strong>的雙引擎模式。具體而言：以中端機構為規模化主力，自營平價護理之家承接住戶失能後的下游照護（提高客戶終身價值並兌現「住到最後不必搬家」的承諾），共用同一營運後台與醫療資源；待品牌成熟後再以單一旗艦切入高端。產品設計全面導入日本「飯店式服務、科技照護、健康促進」Know-how，但採台灣本地化的「保證金＋月費」輕資產收費，揚棄日本的入居一時金與保險給付依賴。</p>
+  <p><strong>「以中端為核心、CCRC 連續照護為承諾、醫養結合為護城河、多品牌平台為擴張引擎」</strong>的雙引擎模式。具體而言：以中端機構為規模化主力，自營平價護理之家承接住戶失能後的下游照護（提高客戶終身價值並兌現「住到最後不必搬家」的承諾），共用同一營運後台與醫療資源；待品牌成熟後再以單一旗艦切入高端。產品設計全面導入日本「飯店式服務、科技照護、健康促進」Know-how，但採台灣本地化的「保證金＋月費」輕資產收費，揚棄日本的入住一次金與保險給付依賴。</p>
 
   <h3>問題四：未來十年的發展機會為何？</h3>
   <ul class="bul">
@@ -1579,9 +1580,10 @@ footer.foot h3::before{content:""; width:9px; height:9px; border-radius:2px; bac
   <ul class="src-list">
     <li><strong>台灣官方／統計</strong>：國家發展委員會《2024–2070 年中華民國人口推估報告》（2024.10）；衛福部長期照顧司、長照 2.0 執行成果報告；行政院長照 2.0 政策說明；內政部戶政、家戶結構統計。</li>
     <li><strong>日本一手資料</strong>：厚生勞動省《介護給付費等實態統計（令和 6 年度）》、《介護保險事業狀況報告》、《第 9 期介護保險事業計畫／介護職員必要數推估》；三井不動產、三井不動產 Residential Wellness（Park Wellstate）官網與新聞稿。</li>
-    <li><strong>日本企業／產業</strong>：各社財報與報導（ベネッセスタイルケア、SOMPO ケア、ニチイ學館、學研ココファン）；LIFULL 介護費用相場調查；日本生命收購ニチイ相關報導；nippon.com、介護ニュース Joint、福祉新聞。</li>
+    <li><strong>日本企業／產業</strong>：各社財報與報導（Benesse Style Care、SOMPO Care、日醫學館 Nichii、學研 Cocofump）；LIFULL 介護費用行情調查；日本生命收購日醫學館相關報導；nippon.com、介護新聞 Joint、福祉新聞。</li>
     <li><strong>產業研究／市場</strong>：工研院、資策會銀髮經濟與住宅需求推估（經海基會《交流》雜誌、若水數位整理）；《報導者》長照 3.0 專題；橘世代、50＋、宜居住宅觀察站等養生村收費整理；智齡科技高齡化專題；KPMG《2024 台灣保險業報告》。</li>
   </ul>
+  <p class="disc" style="margin:0 0 12px">匯率換算基準：本報告所有日圓金額均以 <strong>1 日圓 ≈ 0.22 新台幣</strong>（約 4.5 日圓兌 1 新台幣，2026 年概略匯率）換算為新台幣，僅供台灣讀者掌握規模參考；實際金額以交易時點匯率為準。</p>
   <p class="disc">
     免責聲明：本報告為市場研究與策略規劃參考文件，非投資、財務或法律建議，編製者亦非持牌財務顧問。文中財務模型、投資金額、營收與獲利預測均為基於公開資訊之情境估算（illustrative），實際數字將受選址、土地條件、法規認定、人力市場與總體經濟等因素影響，須經正式可行性研究與盡職查核（Due Diligence）後確認。各項統計數據以原始官方來源最新公告為準。投資決策應諮詢合格之專業顧問。
   </p>
@@ -1649,7 +1651,7 @@ window.addEventListener('DOMContentLoaded',function(){
 
   new Chart(document.getElementById('chart_jp_cost'),{type:'line',
     data:{labels:['2001','2008','2015','2020','2024'],
-      datasets:[{label:'介護總費用 (兆日圓)',data:[4.4,7.0,9.8,11.0,11.9],borderColor:SKY,borderWidth:3,
+      datasets:[{label:'照護總費用 (兆日圓)',data:[4.4,7.0,9.8,11.0,11.9],borderColor:SKY,borderWidth:3,
         pointBackgroundColor:'#fff',pointBorderColor:SKY,pointBorderWidth:2,pointRadius:4.5,pointHoverRadius:6,tension:.3,
         backgroundColor:function(c){var a=c.chart.chartArea;return a?grad(c.chart.ctx,a,'rgba(45,126,150,.2)','rgba(45,126,150,0)'):'transparent';},fill:true}]},
     options:{maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:Object.assign({},tip,{callbacks:{label:function(c){return c.parsed.y+' 兆日圓';}}})},
@@ -1657,7 +1659,7 @@ window.addEventListener('DOMContentLoaded',function(){
 
   new Chart(document.getElementById('chart_jp_workforce'),{type:'bar',
     data:{labels:['2022 實績','2026 需求','2040 需求'],
-      datasets:[{label:'介護職員 (萬人)',data:[215,240,272],borderRadius:8,maxBarThickness:84,
+      datasets:[{label:'照護職員 (萬人)',data:[215,240,272],borderRadius:8,maxBarThickness:84,
         backgroundColor:['rgba(28,122,91,.55)','rgba(28,122,91,.8)',CLAY]}]},
     options:{maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:Object.assign({},tip,{callbacks:{label:function(c){return c.parsed.y+' 萬人';}}})},
       scales:{y:{grid:grid,suggestedMin:180,ticks:{callback:function(v){return v+'萬';}}},x:{grid:gridX}}}});
